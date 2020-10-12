@@ -1,0 +1,9 @@
+D:\developer\Financology.Watchlist\Financology.BusinessObjects\bin\Debug\netcoreapp3.1\Financology.BusinessObjects.deps.json
+D:\developer\Financology.Watchlist\Financology.BusinessObjects\bin\Debug\netcoreapp3.1\Financology.BusinessObjects.dll
+D:\developer\Financology.Watchlist\Financology.BusinessObjects\bin\Debug\netcoreapp3.1\Financology.BusinessObjects.pdb
+D:\developer\Financology.Watchlist\Financology.BusinessObjects\obj\Debug\netcoreapp3.1\Financology.BusinessObjects.csprojAssemblyReference.cache
+D:\developer\Financology.Watchlist\Financology.BusinessObjects\obj\Debug\netcoreapp3.1\Financology.BusinessObjects.AssemblyInfoInputs.cache
+D:\developer\Financology.Watchlist\Financology.BusinessObjects\obj\Debug\netcoreapp3.1\Financology.BusinessObjects.AssemblyInfo.cs
+D:\developer\Financology.Watchlist\Financology.BusinessObjects\obj\Debug\netcoreapp3.1\Financology.BusinessObjects.csproj.CoreCompileInputs.cache
+D:\developer\Financology.Watchlist\Financology.BusinessObjects\obj\Debug\netcoreapp3.1\Financology.BusinessObjects.dll
+D:\developer\Financology.Watchlist\Financology.BusinessObjects\obj\Debug\netcoreapp3.1\Financology.BusinessObjects.pdb
