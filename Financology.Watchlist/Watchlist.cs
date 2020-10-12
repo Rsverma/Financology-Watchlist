@@ -80,18 +80,6 @@ namespace Financology.Watchlist
         }
         #endregion
 
-        #region [Methods]
-        public void PopulateFonts()
-        {
-            foreach (FontFamily ff in FontFamily.Families)
-            {
-                if (ff.IsStyleAvailable(FontStyle.Regular))
-                {
-                    toolStripFontfaceComboBox.Items.Add(ff.Name);
-                }
-            }
-        }
-        #endregion
 
         #region[Form Load]
         private void Watchlist_Load(object sender, EventArgs e)
@@ -99,44 +87,8 @@ namespace Financology.Watchlist
             #region [Ribbon Related Changes]
 
             QuickItems();
-            toolStripButton45.Checked = true;
 
-            PopulateFonts();
-            toolStripCheckBox1.Checked = true;
-            toolStripCheckBox2.Checked = true;
 
-            #region [Events]
-            toolStripFontfaceComboBox.SelectedIndexChanged += new EventHandler(toolStripFontfaceComboBox_SelectedIndexChanged);
-            toolStripFontSizeComboBox.SelectedIndexChanged += new EventHandler(toolStripFontSizeComboBox_SelectedIndexChanged);
-            toolStripButton71.Click += new EventHandler(toolStripButton71_Click);
-            toolStripButton74.Click += new EventHandler(toolStripButton74_Click);
-            underlineToolStripSplitBtn.Click += new EventHandler(underlineToolStripSplitBtn_Click);
-            italicToolStripBtn.Click += new EventHandler(italicToolStripBtn_Click);
-            boldToolstripBtn.Click += new EventHandler(boldToolstripBtn_Click);
-            topBorderToolStripButton.Click += topBorderToolStripButton_Click;
-            bottomBorderToolStripButton.Click += bottomBorderToolStripButton_Click;
-            leftBorderToolStripButton.Click += leftBorderToolStripButton_Click;
-            rightBorderToolStripButton.Click += rightBorderToolStripButton_Click;
-            wrapTextToolStripButton.Click += wrapTextToolStripButton_Click;
-            mergeCenterToolStripButton.Click += mergeCenterToolStripButton_Click; freezeToolStripMenuItem.Click += new EventHandler(freezeToolStripMenuItem_Click);
-            toolStripBtnCut.Click += new EventHandler(toolStripBtnCut_Click);
-            toolStripPanelItem15.Click += new EventHandler(toolStripPanelItem15_Click);
-            toolStripBtnCopy.Click += new EventHandler(toolStripBtnCopy_Click);
-            toolStripButton59.Click += new EventHandler(toolStripButton_Click);
-            toolStripButton60.Click += new EventHandler(toolStripButton_Click);
-            toolStripButton61.Click += new EventHandler(toolStripButton_Click);
-            lAlignToolStripBtn.Click += alignToolStripBtn_Click;
-            rAlignToolStripBtn.Click += alignToolStripBtn_Click;
-            centerToolStripBtn.Click += alignToolStripBtn_Click;
-            toolStripButton46.Click += new EventHandler(toolStripButton46_Click);
-            toolStripButton45.Click += new EventHandler(toolStripButton45_Click);
-            toolStripCheckBox1.CheckedChanged += new EventHandler(toolStripCheckBox1_CheckedChanged);
-            toolStripCheckBox2.CheckedChanged += new EventHandler(toolStripCheckBox2_CheckedChanged);
-            this.toolStripDropDownButton1.DropDown = new CustomDropDown(this.colorPickerFont);
-            this.toolStripDropDownButton2.DropDown = new CustomDropDown(this.colorPickerBackground);
-            this.colorPickerFont.MouseUp += colorPicker_MouseUp;
-            this.colorPickerBackground.MouseUp += colorPickerBackground_MouseUp;
-            #endregion
             #endregion
 
             #region [WorkBook]
@@ -178,7 +130,6 @@ namespace Financology.Watchlist
             this.workBook.tabBarSplitterControl.Style = TabBarSplitterStyle.Metro;
             excelRibbon.Header.QuickItemAdded += new ToolStripItemEventHandler(Header_QuickItemAdded);
             excelRibbon.Header.QuickItemRemoved += new ToolStripItemEventHandler(Header_QuickItemRemoved);
-            workBook._grid.CurrentCellActivated += _grid_CurrentCellActivated;
 
             foreach (Control ctrl in this.Controls)
             {
@@ -394,19 +345,6 @@ namespace Financology.Watchlist
             this.gridAwareTextBoxItem2.MinWidth = this.Width - (this.gridAwareTextBoxItem1.MinWidth + 66);
         }
 
-        private void toolStripButton81_Click(object sender, EventArgs e)
-        {
-            WorkBook workBook = new WorkBook(this);
-            workBook.MdiParent = this;
-            workBook.Text = "WorkBook " + childWorkBookNumber++;
-            workBook.Show();
-        }
-
-        private void toolStripButton6_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void toolStripPanelItem15_Click(object sender, EventArgs e)
         {
             workBook.Paste();
@@ -422,265 +360,7 @@ namespace Financology.Watchlist
             workBook.Copy();
         }
 
-        void toolStripFontfaceComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            workBook.FontNameChanged(toolStripFontfaceComboBox.Text);
-        }
-
-        void toolStripFontSizeComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            workBook.FontSizeChanged(toolStripFontSizeComboBox.Text);
-        }
-
-        void toolStripButton71_Click(object sender, EventArgs e)
-        {
-            float size = workBook.FontSizeIncrease();
-            toolStripFontSizeComboBox.Text = size.ToString();
-        }
-
-        void toolStripButton74_Click(object sender, EventArgs e)
-        {
-            float size = workBook.FontSizeDecrease();
-            toolStripFontSizeComboBox.Text = size.ToString();
-        }
-
-        void underlineToolStripSplitBtn_Click(object sender, EventArgs e)
-        {
-            underlineToolStripSplitBtn.Checked = !underlineToolStripSplitBtn.Checked;
-            workBook.UnderLine(underlineToolStripSplitBtn.Checked);
-        }
-
-        void boldToolstripBtn_Click(object sender, EventArgs e)
-        {
-            boldToolstripBtn.Checked = !boldToolstripBtn.Checked;
-            workBook.Bold(boldToolstripBtn.Checked);
-        }
-
-        void mergeCenterToolStripButton_Click(object sender, EventArgs e)
-        {
-            mergeCenterToolStripButton.Checked = !mergeCenterToolStripButton.Checked;
-            workBook.MergeCells(mergeCenterToolStripButton.Checked);
-        }
-
-        void wrapTextToolStripButton_Click(object sender, EventArgs e)
-        {
-            wrapTextToolStripButton.Checked = !wrapTextToolStripButton.Checked;
-            workBook.WrapText(wrapTextToolStripButton.Checked);
-        }
-
-        void topBorderToolStripButton_Click(object sender, EventArgs e)
-        {
-            workBook.TopBorder();
-        }
-
-        void rightBorderToolStripButton_Click(object sender, EventArgs e)
-        {
-            workBook.RightBorder();
-        }
-
-        void leftBorderToolStripButton_Click(object sender, EventArgs e)
-        {
-            workBook.LeftBorder();
-        }
-
-        void bottomBorderToolStripButton_Click(object sender, EventArgs e)
-        {
-            workBook.BottomBorder();
-        }
-
-        private void noBorderToolStripButton5_Click(object sender, EventArgs e)
-        {
-            workBook.NoBorder();
-        }
-
-        void italicToolStripBtn_Click(object sender, EventArgs e)
-        {
-            italicToolStripBtn.Checked = !italicToolStripBtn.Checked;
-            workBook.Italic(italicToolStripBtn.Checked);
-        }
-
-        void toolStripButton_Click(object sender, EventArgs e)
-        {
-            toolStripButton59.Checked = toolStripButton60.Checked = toolStripButton61.Checked = false;
-            if ((sender as ToolStripButton).Text == toolStripButton59.Text && !toolStripButton59.Checked)
-            {
-                toolStripButton59.Checked = !toolStripButton59.Checked;
-                workBook.TopAlign(toolStripButton59.Checked);
-            }
-            else if ((sender as ToolStripButton).Text == toolStripButton60.Text && !toolStripButton60.Checked)
-            {
-                toolStripButton60.Checked = !toolStripButton60.Checked;
-                workBook.MiddleAlign(toolStripButton60.Checked);
-            }
-            else if ((sender as ToolStripButton).Text == toolStripButton61.Text && !toolStripButton61.Checked)
-            {
-                toolStripButton61.Checked = !toolStripButton61.Checked;
-                workBook.BottomAlign(toolStripButton61.Checked);
-            }
-
-        }
-
-        void alignToolStripBtn_Click(object sender, EventArgs e)
-        {
-            lAlignToolStripBtn.Checked = rAlignToolStripBtn.Checked = centerToolStripBtn.Checked = false;
-            if ((sender as ToolStripButton).Text == lAlignToolStripBtn.Text && !lAlignToolStripBtn.Checked)
-            {
-                lAlignToolStripBtn.Checked = !lAlignToolStripBtn.Checked;
-                workBook.LeftAlign(lAlignToolStripBtn.Checked);
-            }
-            else if ((sender as ToolStripButton).Text == centerToolStripBtn.Text && !centerToolStripBtn.Checked)
-            {
-                centerToolStripBtn.Checked = !centerToolStripBtn.Checked;
-                workBook.CenterAlign(centerToolStripBtn.Checked);
-            }
-            else if ((sender as ToolStripButton).Text == rAlignToolStripBtn.Text && !rAlignToolStripBtn.Checked)
-            {
-                rAlignToolStripBtn.Checked = !rAlignToolStripBtn.Checked;
-                workBook.RightAlign(rAlignToolStripBtn.Checked);
-            }
-        }
-
-        void toolStripButton46_Click(object sender, EventArgs e)
-        {
-            if (!toolStripButton46.Checked)
-            {
-                workBook.PageLayout(true);
-                toolStripButton45.Checked = false;
-                toolStripButton46.Checked = true;
-            }
-        }
-
-        void toolStripButton45_Click(object sender, EventArgs e)
-        {
-            if (!toolStripButton45.Checked)
-            {
-                workBook.PageLayout(false);
-                toolStripButton46.Checked = false;
-                toolStripButton45.Checked = true;
-            }
-        }
-
-        void toolStripCheckBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (toolStripCheckBox2.Checked)
-            {
-                workBook.ShowRowHeader(true);
-            }
-            else
-            {
-                workBook.ShowRowHeader(false);
-            }
-        }
-
-        void toolStripCheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (toolStripCheckBox1.Checked)
-            {
-                workBook.ShowLines(true);
-            }
-            else
-            {
-                workBook.ShowLines(false);
-            }
-        }
-
-        void freezeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (!freezeToolStripMenuItem.Checked)
-            {
-                workBook.Freeze(true);
-                freezeToolStripMenuItem.Checked = true;
-            }
-            else
-            {
-                workBook.Freeze(false);
-                freezeToolStripMenuItem.Checked = false;
-            }
-        }
-
-        bool flag;
-
-        void colorPicker_MouseUp(object sender, MouseEventArgs e)
-        {
-            workBook.TextColorChanged(this.colorPickerFont.SelectedColor);
-            this.toolStripDropDownButton1.HideDropDown();
-            this.toolStripDropDownButton1.BackColor = this.colorPickerFont.SelectedColor;
-        }
-
-        void colorPickerBackground_MouseUp(object sender, MouseEventArgs e)
-        {
-            workBook.BackColorChanged(this.colorPickerBackground.SelectedColor);
-            this.toolStripDropDownButton2.HideDropDown();
-            this.toolStripDropDownButton2.BackColor = this.colorPickerBackground.SelectedColor;
-        }
-
-        void _grid_CurrentCellActivated(object sender, EventArgs e)
-        {
-            
-            this.UpdateFontStyles(workBook._grid); ;
-        }
-
-        public void UpdateFontStyles(GridControl _grid)
-        {
-            flag = false;
-            if (this.boldToolstripBtn != null)
-                this.boldToolstripBtn.Checked = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].Font.Bold;
-
-            if (this.underlineToolStripSplitBtn != null)
-                this.underlineToolStripSplitBtn.Checked = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].Font.Underline;
-
-            if (this.italicToolStripBtn != null)
-                this.italicToolStripBtn.Checked = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].Font.Italic;
-
-            if (this.toolStripFontSizeComboBox != null)
-                this.toolStripFontSizeComboBox.Text = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].Font.Size.ToString();
-
-            if (this.toolStripFontfaceComboBox != null)
-                toolStripFontfaceComboBox.Text = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].Font.Facename;
-
-            lAlignToolStripBtn.Checked = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].HorizontalAlignment == GridHorizontalAlignment.Left;
-            centerToolStripBtn.Checked = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].HorizontalAlignment == GridHorizontalAlignment.Center;
-            rAlignToolStripBtn.Checked = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].HorizontalAlignment == GridHorizontalAlignment.Right;
-
-            toolStripButton59.Checked = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].VerticalAlignment == GridVerticalAlignment.Top;
-            toolStripButton60.Checked = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].VerticalAlignment == GridVerticalAlignment.Middle;
-            toolStripButton61.Checked = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].VerticalAlignment == GridVerticalAlignment.Bottom;
-
-            mergeCenterToolStripButton.Checked = (_grid.Model.CoveredRanges.Ranges.Contains(GridRangeInfo.Cell(_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex)));//ActiveRange.Left == _grid.CurrentCell.ColIndex);
-            foreach (GridRangeInfo range in _grid.Model.CoveredRanges.Ranges)
-            {
-                if (range.Top == _grid.CurrentCell.RowIndex && range.Left == _grid.CurrentCell.ColIndex)
-                {
-                    flag = true;
-                    break;
-                }
-            }
-            mergeCenterToolStripButton.Checked = flag;
-            //(_grid.Model.Selections.Ranges.ActiveRange));// == _grid.CurrentCell.RowIndex && _grid.Model.CoveredRanges.Ranges.ActiveRange.Left == _grid.CurrentCell.ColIndex);
-            wrapTextToolStripButton.Checked = _grid[_grid.CurrentCell.RowIndex, _grid.CurrentCell.ColIndex].WrapText;
-        }
-
-        void barItem2_Click(object sender, EventArgs e)
-        {
-            workBook.AcceptChanges();
-        }
-
-        void barItem1_Click(object sender, EventArgs e)
-        {
-            workBook.RejectChanges();
-        }
 
         #endregion
     }
-
-    #region [Custom DropDown]
-    //Creates the CustomDropDown class which has a color picker.
-    public class CustomDropDown : ToolStripDropDown
-    {
-        public CustomDropDown(ColorPickerUIAdv colorPic)
-        {
-            this.Items.Add(new ToolStripControlHost(colorPic));
-        }
-    }
-    #endregion
 }

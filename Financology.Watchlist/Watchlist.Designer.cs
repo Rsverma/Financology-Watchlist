@@ -25,83 +25,10 @@ namespace Financology.Watchlist
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo9 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo10 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo11 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo12 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo13 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo14 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo15 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo16 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo17 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo18 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo19 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo20 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Watchlist));
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo1 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo2 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo3 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo4 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo5 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo6 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo7 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo8 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo21 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo22 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo23 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
             Syncfusion.Windows.Forms.MetroColorTable metroColorTable1 = new Syncfusion.Windows.Forms.MetroColorTable();
             this.excelRibbon = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripPanelItem15 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-            this.toolStripBtnPaste = new System.Windows.Forms.ToolStripButton();
-            this.toolStripPanelItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-            this.toolStripBtnCut = new System.Windows.Forms.ToolStripButton();
-            this.toolStripBtnCopy = new System.Windows.Forms.ToolStripButton();
-            this.toolStripPanelItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-            this.toolStripFontfaceComboBox = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripFontSizeComboBox = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripButton71 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton74 = new System.Windows.Forms.ToolStripButton();
-            this.boldToolstripBtn = new System.Windows.Forms.ToolStripButton();
-            this.underlineToolStripSplitBtn = new System.Windows.Forms.ToolStripButton();
-            this.italicToolStripBtn = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.bottomBorderToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.topBorderToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.leftBorderToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.rightBorderToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.noBorderToolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripPanelItem54 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-            this.toolStripButton59 = new System.Windows.Forms.ToolStripButton();
-            this.lAlignToolStripBtn = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton60 = new System.Windows.Forms.ToolStripButton();
-            this.centerToolStripBtn = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton61 = new System.Windows.Forms.ToolStripButton();
-            this.rAlignToolStripBtn = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripPanelItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-            this.wrapTextToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.mergeCenterToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripTabItem7 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripEx22 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripPanelItem47 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-            this.toolStripButton45 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripPanelItem48 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-            this.toolStripButton46 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripEx25 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripPanelItem51 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-            this.freezeToolStripMenuItem = new System.Windows.Forms.ToolStripButton();
-            this.toolStripCheckBox1 = new Syncfusion.Windows.Forms.Tools.ToolStripCheckBox();
-            this.toolStripCheckBox2 = new Syncfusion.Windows.Forms.Tools.ToolStripCheckBox();
-            this.toolStripButton84 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton85 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton86 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton81 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton82 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton83 = new System.Windows.Forms.ToolStripButton();
             this.officeSplitButton11 = new Syncfusion.Windows.Forms.Tools.OfficeSplitButton();
             this.officeButton101 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
             this.officeButton102 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
@@ -134,7 +61,6 @@ namespace Financology.Watchlist
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.colorPickerFont = new Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv();
             this.colorPickerBackground = new Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv();
-            this.toolStripButton28 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSplitButtonEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripSplitButtonEx();
             this.mergeCenterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mergeAcrossToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -314,9 +240,6 @@ namespace Financology.Watchlist
             ((System.ComponentModel.ISupportInitialize)(this.excelRibbon)).BeginInit();
             this.excelRibbon.SuspendLayout();
             this.toolStripTabItem1.Panel.SuspendLayout();
-            this.toolStripTabItem7.Panel.SuspendLayout();
-            this.toolStripEx22.SuspendLayout();
-            this.toolStripEx25.SuspendLayout();
             this.SuspendLayout();
             // 
             // excelRibbon
@@ -362,16 +285,6 @@ namespace Financology.Watchlist
             this.toolStripTabItem1.Position = 0;
             this.toolStripTabItem1.Size = new System.Drawing.Size(54, 24);
             this.toolStripTabItem1.Text = "ADD/EDIT";
-            this.toolStripPanelItem1.CausesValidation = false;
-            this.toolStripPanelItem1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripPanelItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            //this.toolStripPanelItem1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            ////this.toolStripBtnCut,
-            //this.toolStripBtnCopy});
-            this.toolStripPanelItem1.Name = "toolStripPanelItem1";
-            this.toolStripPanelItem1.Size = new System.Drawing.Size(57, 73);
-            this.toolStripPanelItem1.Text = "toolStripPanelItem1";
-            this.toolStripPanelItem1.Transparent = true;
             // colorPickerFont
             // 
             this.colorPickerFont.BeforeTouchSize = new System.Drawing.Size(13, 13);
@@ -385,15 +298,6 @@ namespace Financology.Watchlist
             this.colorPickerFont.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.visualstyle.Default;
             this.colorPickerFont.TabIndex = 0;
             this.colorPickerFont.UseOffice2007Style = false;
-            // 
-            // colorPickerBackground.RecentGroup
-            // 
-            // 
-            // colorPickerBackground.StandardGroup
-            // 
-            // 
-            // colorPickerBackground.ThemeGroup
-            // 
             // 
             // colorPickerBackground
             // 
@@ -444,45 +348,6 @@ namespace Financology.Watchlist
             this.imageList1.Images.SetKeyName(1, "Edit_UndoHS.png");
             this.imageList1.Images.SetKeyName(2, "Edit_RedoHS.png");
             // 
-            // toolStripCheckBox4
-            // 
-            this.toolStripCheckBox4.Name = "toolStripCheckBox4";
-            this.toolStripCheckBox4.Size = new System.Drawing.Size(77, 17);
-            this.toolStripCheckBox4.Text = "Grid Lines";
-            // 
-            // toolStripCheckBox5
-            // 
-            this.toolStripCheckBox5.Name = "toolStripCheckBox5";
-            this.toolStripCheckBox5.Size = new System.Drawing.Size(75, 17);
-            this.toolStripCheckBox5.Text = "Headings";
-            // 
-            // toolStripButton99
-            // 
-            this.toolStripButton99.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton99.Image")));
-            this.toolStripButton99.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton99.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton99.Name = "toolStripButton99";
-            this.toolStripButton99.Size = new System.Drawing.Size(36, 49);
-            this.toolStripButton99.Text = "Sort";
-            this.toolStripButton99.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripButton25
-            // 
-            this.toolStripButton25.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton25.Image")));
-            this.toolStripButton25.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton25.Name = "toolStripButton25";
-            this.toolStripButton25.Size = new System.Drawing.Size(77, 20);
-            this.toolStripButton25.Text = "Advanced";
-            // 
-            // toolStripPanelItem28
-            // 
-            this.toolStripPanelItem28.CausesValidation = false;
-            this.toolStripPanelItem28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripPanelItem28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.toolStripPanelItem28.Name = "toolStripPanelItem28";
-            this.toolStripPanelItem28.Size = new System.Drawing.Size(52, 105);
-            this.toolStripPanelItem28.Transparent = true;
-            // 
             // gridAwareTextBoxItem1
             // 
             this.gridAwareTextBoxItem1.BarName = "gridAwareTextBoxItem1";
@@ -527,11 +392,6 @@ namespace Financology.Watchlist
             this.excelRibbon.PerformLayout();
             this.toolStripTabItem1.Panel.ResumeLayout(false);
             this.toolStripTabItem1.Panel.PerformLayout();
-            this.toolStripTabItem7.Panel.ResumeLayout(false);
-            this.toolStripEx22.ResumeLayout(false);
-            this.toolStripEx22.PerformLayout();
-            this.toolStripEx25.ResumeLayout(false);
-            this.toolStripEx25.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -547,35 +407,10 @@ namespace Financology.Watchlist
 
         private Syncfusion.Windows.Forms.Tools.RibbonControlAdv excelRibbon;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem1;
-        private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem15;
-        private System.Windows.Forms.ToolStripButton toolStripBtnPaste;
-        private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem1;
-        private System.Windows.Forms.ToolStripButton toolStripBtnCut;
-        private System.Windows.Forms.ToolStripButton toolStripBtnCopy;
-        private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem2;
-        private System.Windows.Forms.ToolStripComboBox toolStripFontfaceComboBox;
-        private System.Windows.Forms.ToolStripComboBox toolStripFontSizeComboBox;
-        private System.Windows.Forms.ToolStripButton lAlignToolStripBtn;
-        private System.Windows.Forms.ToolStripButton centerToolStripBtn;
-        private System.Windows.Forms.ToolStripButton rAlignToolStripBtn;
-        private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem7;
-        //private Syncfusion.Windows.Forms.Tools.ToolStripSplitButtonEx toolStripSplitButtonEx1;
-        private System.Windows.Forms.ToolStripButton toolStripButton28;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx22;
-        private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem47;
-        private System.Windows.Forms.ToolStripButton toolStripButton45;
-        private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem48;
-        private System.Windows.Forms.ToolStripButton toolStripButton46;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx25;
-        private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem51;
 
         internal Financology.Watchlist.GridAwareTextBoxBarItem gridAwareTextBoxItem1;
         internal WorkBook workBook = null;
-        private int childWorkBookNumber = 1;
-        private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem54;
-        private System.Windows.Forms.ToolStripButton toolStripButton59;
-        private System.Windows.Forms.ToolStripButton toolStripButton60;
-        private System.Windows.Forms.ToolStripButton toolStripButton61;
+
         internal GridAwareTextBoxBarItem gridAwareTextBoxItem2;
         private Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar xpToolBar1;
         private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem SapleBarIte;
@@ -618,8 +453,7 @@ namespace Financology.Watchlist
         private System.Windows.Forms.ToolStripButton toolStripButton8;
         private System.Windows.Forms.ToolStripButton toolStripButton64;
         private Syncfusion.Windows.Forms.Tools.SuperAccelerator superAccelerator1;
-        private System.Windows.Forms.ToolStripButton toolStripButton71;
-        private System.Windows.Forms.ToolStripButton toolStripButton74;
+
         private System.Windows.Forms.ToolStripButton toolStripButton69;
         private System.Windows.Forms.ToolStripButton toolStripButton70;
         private Syncfusion.Windows.Forms.Tools.ToolStripSplitButtonEx toolStripSplitButtonEx2;
@@ -673,8 +507,6 @@ namespace Financology.Watchlist
         private System.Windows.Forms.ToolStripMenuItem mergeAcrossToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mergeCellsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unmergeCellsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton toolStripButton82;
-        private System.Windows.Forms.ToolStripButton toolStripButton83;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
         private Syncfusion.Windows.Forms.Tools.OfficeDropDownButton officeDropDownButton10;
@@ -737,7 +569,6 @@ namespace Financology.Watchlist
         private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton98;
         private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton99;
         private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton100;
-        private System.Windows.Forms.ToolStripButton toolStripButton81;
         private Syncfusion.Windows.Forms.Tools.OfficeDropDownButton officeDropDownButton18;
         private Syncfusion.Windows.Forms.Tools.OfficeDropDownButton officeDropDownButton19;
         private Syncfusion.Windows.Forms.Tools.OfficeSplitButton officeSplitButton11;
@@ -766,9 +597,6 @@ namespace Financology.Watchlist
         private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton121;
         private Syncfusion.Windows.Forms.ScrollersFrame scrollersFrame1;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.ToolStripButton toolStripButton84;
-        private System.Windows.Forms.ToolStripButton toolStripButton85;
-        private System.Windows.Forms.ToolStripButton toolStripButton86;
         private Syncfusion.Windows.Forms.Tools.SuperToolTip superToolTip1;
         private Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv colorPickerFont;
         private Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv colorPickerBackground;
@@ -784,50 +612,11 @@ namespace Financology.Watchlist
                 {
                     components.Dispose();
                 }
-                freezeToolStripMenuItem.Click -= new EventHandler(freezeToolStripMenuItem_Click);
-                toolStripBtnCut.Click -= new EventHandler(toolStripBtnCut_Click);
-                toolStripPanelItem15.Click -= new EventHandler(toolStripPanelItem15_Click);
-                toolStripBtnCopy.Click -= new EventHandler(toolStripBtnCopy_Click);
-                toolStripButton59.Click -= new EventHandler(toolStripButton_Click);
-                toolStripButton60.Click -= new EventHandler(toolStripButton_Click);
-                toolStripButton61.Click -= new EventHandler(toolStripButton_Click);
-                lAlignToolStripBtn.Click -= alignToolStripBtn_Click;
-                rAlignToolStripBtn.Click -= alignToolStripBtn_Click;
-                centerToolStripBtn.Click -= alignToolStripBtn_Click;
-                toolStripButton46.Click -= new EventHandler(toolStripButton46_Click);
-                toolStripButton45.Click -= new EventHandler(toolStripButton45_Click);
-                toolStripCheckBox1.CheckedChanged -= new EventHandler(toolStripCheckBox1_CheckedChanged);
-                toolStripCheckBox2.CheckedChanged -= new EventHandler(toolStripCheckBox2_CheckedChanged);
-                this.colorPickerFont.MouseUp -= colorPicker_MouseUp;
-                this.colorPickerBackground.MouseUp -= colorPickerBackground_MouseUp;
-                workBook._grid.CurrentCellActivated -= _grid_CurrentCellActivated;
-                toolStripFontfaceComboBox.SelectedIndexChanged -= new EventHandler(toolStripFontfaceComboBox_SelectedIndexChanged);
-                toolStripFontSizeComboBox.SelectedIndexChanged -= new EventHandler(toolStripFontSizeComboBox_SelectedIndexChanged);
-                toolStripButton71.Click -= new EventHandler(toolStripButton71_Click);
-                toolStripButton74.Click -= new EventHandler(toolStripButton74_Click);
-                underlineToolStripSplitBtn.Click -= new EventHandler(underlineToolStripSplitBtn_Click);
-                italicToolStripBtn.Click -= new EventHandler(italicToolStripBtn_Click);
-                boldToolstripBtn.Click -= new EventHandler(boldToolstripBtn_Click);
-                topBorderToolStripButton.Click -= topBorderToolStripButton_Click;
-                bottomBorderToolStripButton.Click -= bottomBorderToolStripButton_Click;
-                leftBorderToolStripButton.Click -= leftBorderToolStripButton_Click;
-                rightBorderToolStripButton.Click -= rightBorderToolStripButton_Click;
-                wrapTextToolStripButton.Click -= wrapTextToolStripButton_Click;
-                mergeCenterToolStripButton.Click -= mergeCenterToolStripButton_Click;
                 base.Dispose(disposing);
             }
         }
-        private System.Windows.Forms.ToolStripButton underlineToolStripSplitBtn;
-        private System.Windows.Forms.ToolStripButton italicToolStripBtn;
-        private System.Windows.Forms.ToolStripButton boldToolstripBtn;
-        private Syncfusion.Windows.Forms.Tools.ToolStripCheckBox toolStripCheckBox2;
-        private Syncfusion.Windows.Forms.Tools.ToolStripCheckBox toolStripCheckBox1;
         private Syncfusion.Windows.Forms.Tools.ToolStripCheckBox toolStripCheckBox4;
         private Syncfusion.Windows.Forms.Tools.ToolStripCheckBox toolStripCheckBox5;
-        private System.Windows.Forms.ToolStripButton freezeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem fromAccessToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fromWebToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fromTextToolStripMenuItem;
@@ -845,16 +634,6 @@ namespace Financology.Watchlist
         private System.Windows.Forms.ToolStripMenuItem mINToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mAXToolStripMenuItem1;
         private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem28;
-        private System.Windows.Forms.ToolStripButton bottomBorderToolStripButton;
-        private System.Windows.Forms.ToolStripButton topBorderToolStripButton;
-        private System.Windows.Forms.ToolStripButton leftBorderToolStripButton;
-        private System.Windows.Forms.ToolStripButton rightBorderToolStripButton;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton wrapTextToolStripButton;
-        private System.Windows.Forms.ToolStripButton mergeCenterToolStripButton;
-        private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem3;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton noBorderToolStripButton5;
     }
 }
 

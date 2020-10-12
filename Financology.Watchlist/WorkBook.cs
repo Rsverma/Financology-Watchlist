@@ -854,11 +854,6 @@ namespace Financology.Watchlist
 
         #region Events
 
-        void _grid_CurrentCellActivated(object sender, EventArgs e)
-        {
-            form.UpdateFontStyles(_grid);
-        }
-
         void _grid_CurrentCellMoved(object sender, GridCurrentCellMovedEventArgs e)
         {
             GridCurrentCell cc = this._grid.CurrentCell;
@@ -969,7 +964,6 @@ namespace Financology.Watchlist
                     grid = page.Controls[1] as GridControl;
                 GridCurrentCell cc = grid.CurrentCell;
                 this.gridAwareTextBox2.Text = grid[cc.RowIndex, cc.ColIndex].Text;
-                grid.CurrentCellActivated += _grid_CurrentCellActivated;
             }
         }
         #endregion
