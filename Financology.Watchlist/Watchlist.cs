@@ -99,8 +99,6 @@ namespace Financology.Watchlist
             #region [Ribbon Related Changes]
 
             QuickItems();
-            this.toolStripFontfaceComboBox.SelectedIndex = 0;
-            this.toolStripFontSizeComboBox.SelectedIndex = 3;
             toolStripButton45.Checked = true;
 
             PopulateFonts();
