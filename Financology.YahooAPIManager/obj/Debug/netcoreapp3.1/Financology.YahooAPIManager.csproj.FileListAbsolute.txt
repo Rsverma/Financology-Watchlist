@@ -1,9 +1,0 @@
-D:\developer\Financology.Watchlist\Financology.YahooAPIManager\bin\Debug\netcoreapp3.1\Financology.YahooAPIManager.deps.json
-D:\developer\Financology.Watchlist\Financology.YahooAPIManager\bin\Debug\netcoreapp3.1\Financology.YahooAPIManager.dll
-D:\developer\Financology.Watchlist\Financology.YahooAPIManager\bin\Debug\netcoreapp3.1\Financology.YahooAPIManager.pdb
-D:\developer\Financology.Watchlist\Financology.YahooAPIManager\obj\Debug\netcoreapp3.1\Financology.YahooAPIManager.csprojAssemblyReference.cache
-D:\developer\Financology.Watchlist\Financology.YahooAPIManager\obj\Debug\netcoreapp3.1\Financology.YahooAPIManager.AssemblyInfoInputs.cache
-D:\developer\Financology.Watchlist\Financology.YahooAPIManager\obj\Debug\netcoreapp3.1\Financology.YahooAPIManager.AssemblyInfo.cs
-D:\developer\Financology.Watchlist\Financology.YahooAPIManager\obj\Debug\netcoreapp3.1\Financology.YahooAPIManager.csproj.CoreCompileInputs.cache
-D:\developer\Financology.Watchlist\Financology.YahooAPIManager\obj\Debug\netcoreapp3.1\Financology.YahooAPIManager.dll
-D:\developer\Financology.Watchlist\Financology.YahooAPIManager\obj\Debug\netcoreapp3.1\Financology.YahooAPIManager.pdb
