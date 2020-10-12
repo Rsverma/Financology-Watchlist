@@ -270,6 +270,7 @@ namespace Financology.Watchlist
             _grid.Name = string.Format("gridControl{0}", i + 1);
             _grid.SmartSizeBox = false;
             _grid.Text = string.Format("gridControl{0}", i + 1);
+            _grid.ReadOnly  = true;
 
             // 
             // tabBarPage

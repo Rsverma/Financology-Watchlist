@@ -52,13 +52,11 @@ namespace Financology.Watchlist
             Syncfusion.Windows.Forms.MetroColorTable metroColorTable1 = new Syncfusion.Windows.Forms.MetroColorTable();
             this.excelRibbon = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.clipboardToolStripExt = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.toolStripPanelItem15 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
             this.toolStripBtnPaste = new System.Windows.Forms.ToolStripButton();
             this.toolStripPanelItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
             this.toolStripBtnCut = new System.Windows.Forms.ToolStripButton();
             this.toolStripBtnCopy = new System.Windows.Forms.ToolStripButton();
-            this.fontToolStripExt = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.toolStripPanelItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
             this.toolStripFontfaceComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripFontSizeComboBox = new System.Windows.Forms.ToolStripComboBox();
@@ -76,7 +74,6 @@ namespace Financology.Watchlist
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.paragraphToolStripExt = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.toolStripPanelItem54 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
             this.toolStripButton59 = new System.Windows.Forms.ToolStripButton();
             this.lAlignToolStripBtn = new System.Windows.Forms.ToolStripButton();
@@ -317,9 +314,6 @@ namespace Financology.Watchlist
             ((System.ComponentModel.ISupportInitialize)(this.excelRibbon)).BeginInit();
             this.excelRibbon.SuspendLayout();
             this.toolStripTabItem1.Panel.SuspendLayout();
-            this.clipboardToolStripExt.SuspendLayout();
-            this.fontToolStripExt.SuspendLayout();
-            this.paragraphToolStripExt.SuspendLayout();
             this.toolStripTabItem7.Panel.SuspendLayout();
             this.toolStripEx22.SuspendLayout();
             this.toolStripEx25.SuspendLayout();
@@ -331,7 +325,7 @@ namespace Financology.Watchlist
             this.excelRibbon.CaptionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.excelRibbon.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.excelRibbon.Header.AddMainItem(toolStripTabItem1);
-            this.excelRibbon.Header.AddMainItem(toolStripTabItem7);
+            //this.excelRibbon.Header.AddMainItem(toolStripTabItem7);
             this.excelRibbon.Location = new System.Drawing.Point(1, 1);
             this.excelRibbon.MenuButtonFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.excelRibbon.MenuButtonText = "FILE";
@@ -339,46 +333,18 @@ namespace Financology.Watchlist
             this.excelRibbon.MenuColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(198)))));
             this.excelRibbon.Name = "excelRibbon";
             this.excelRibbon.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Managed;
-            // 
-            // excelRibbon.OfficeMenu
-            // 
-            this.excelRibbon.OfficeMenu.AutoSize = false;
-            this.excelRibbon.OfficeMenu.AuxPanel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.excelRibbon.OfficeMenu.AuxPanel.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton84,
-            this.toolStripButton85,
-            this.toolStripButton86});
-            this.excelRibbon.OfficeMenu.AuxPanel.SeparatorIndent = 16;
-            this.excelRibbon.OfficeMenu.AuxPanel.Text = "Recent Documents";
-            this.excelRibbon.OfficeMenu.MainPanel.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton81,
-            this.toolStripButton82,
-            this.toolStripButton83,
-            this.officeSplitButton11,
-            this.toolStripSeparator8,
-            this.officeSplitButton12,
-            this.officeDropDownButton18,
-            this.officeDropDownButton19,
-            this.officeDropDownButton20,
-            this.toolStripSeparator9});
-            this.excelRibbon.OfficeMenu.Name = "OfficeMenu";
-            this.excelRibbon.OfficeMenu.Size = new System.Drawing.Size(400, 420);
-            this.excelRibbon.OfficeMenu.SystemPanel.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton6,
-            this.toolStripButton4});
             this.excelRibbon.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.excelRibbon.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.excelRibbon.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2013;
             this.excelRibbon.SelectedTab = this.toolStripTabItem1;
             this.excelRibbon.ShowRibbonDisplayOptionButton = true;
-            this.excelRibbon.Size = new System.Drawing.Size(869, 156);
+            this.excelRibbon.Size = new System.Drawing.Size(869, 100);
             this.excelRibbon.SystemText.QuickAccessDialogDropDownName = "Start menu";
             this.excelRibbon.SystemText.RenameDisplayLabelText = "&Display Name:";
             this.excelRibbon.TabIndex = 0;
             this.excelRibbon.Text = "ribbonControlAdv1";
             this.excelRibbon.TitleColor = System.Drawing.Color.Black;
             this.excelRibbon.UpdateUIOnAppIdle = true;
-            this.excelRibbon.MenuButtonDoubleClick += new System.EventHandler(this.excelRibbon_MenuButtonDoubleClick);
             // 
             // toolStripTabItem1
             // 
@@ -389,50 +355,13 @@ namespace Financology.Watchlist
             // 
             // excelRibbon.ribbonPanel1
             // 
-            this.toolStripTabItem1.Panel.Controls.Add(this.clipboardToolStripExt);
-            this.toolStripTabItem1.Panel.Controls.Add(this.fontToolStripExt);
-            this.toolStripTabItem1.Panel.Controls.Add(this.paragraphToolStripExt);
             this.toolStripTabItem1.Panel.Name = "ribbonPanel1";
             this.toolStripTabItem1.Panel.ScrollPosition = 0;
             this.toolStripTabItem1.Panel.TabIndex = 2;
-            this.toolStripTabItem1.Panel.Text = "HOME";
+            this.toolStripTabItem1.Panel.Text = "ADD/EDIT";
             this.toolStripTabItem1.Position = 0;
             this.toolStripTabItem1.Size = new System.Drawing.Size(54, 24);
-            this.toolStripTabItem1.Text = "HOME";
-            // 
-            // clipboardToolStripExt
-            // 
-            this.superAccelerator1.SetCollapsedDropDownAccelerator(this.clipboardToolStripExt, null);
-            this.clipboardToolStripExt.CollapsedDropDownButtonText = "Clipboard";
-            this.clipboardToolStripExt.DefaultDropDownDirection = System.Windows.Forms.ToolStripDropDownDirection.BelowRight;
-            this.clipboardToolStripExt.Dock = System.Windows.Forms.DockStyle.None;
-            this.clipboardToolStripExt.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.clipboardToolStripExt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.clipboardToolStripExt.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.clipboardToolStripExt.Image = ((System.Drawing.Image)(resources.GetObject("clipboardToolStripExt.Image")));
-            this.clipboardToolStripExt.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripPanelItem15,
-            this.toolStripPanelItem1});
-            this.clipboardToolStripExt.LauncherStyle = Syncfusion.Windows.Forms.Tools.LauncherStyle.Office2007;
-            this.clipboardToolStripExt.Location = new System.Drawing.Point(0, 1);
-            this.clipboardToolStripExt.Name = "clipboardToolStripExt";
-            this.clipboardToolStripExt.Office12Mode = false;
-            this.clipboardToolStripExt.Padding = new System.Windows.Forms.Padding(5);
-            this.clipboardToolStripExt.Size = new System.Drawing.Size(119, 97);
-            this.clipboardToolStripExt.TabIndex = 5;
-            this.clipboardToolStripExt.Text = "Clipboard";
-            // 
-            // toolStripPanelItem15
-            // 
-            this.toolStripPanelItem15.CausesValidation = false;
-            this.toolStripPanelItem15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripPanelItem15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.toolStripPanelItem15.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripBtnPaste});
-            this.toolStripPanelItem15.Name = "toolStripPanelItem15";
-            this.toolStripPanelItem15.Size = new System.Drawing.Size(42, 73);
-            this.toolStripPanelItem15.Text = "toolStripPanelItem15";
-            this.toolStripPanelItem15.Transparent = true;
+            this.toolStripTabItem1.Text = "ADD/EDIT";
             // 
             // toolStripBtnPaste
             // 
@@ -503,43 +432,6 @@ namespace Financology.Watchlist
             toolTipInfo11.Header.Text = "Copy";
             this.superToolTip1.SetToolTip(this.toolStripBtnCopy, toolTipInfo11);
             this.toolStripBtnCopy.ToolTipText = "Copy";
-            // 
-            // fontToolStripExt
-            // 
-            this.fontToolStripExt.AutoSize = false;
-            this.superAccelerator1.SetCollapsedDropDownAccelerator(this.fontToolStripExt, null);
-            this.fontToolStripExt.CollapsedDropDownButtonText = "Font";
-            this.fontToolStripExt.DefaultDropDownDirection = System.Windows.Forms.ToolStripDropDownDirection.BelowRight;
-            this.fontToolStripExt.Dock = System.Windows.Forms.DockStyle.None;
-            this.fontToolStripExt.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.fontToolStripExt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.fontToolStripExt.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.fontToolStripExt.GroupedButtons = true;
-            this.fontToolStripExt.Image = ((System.Drawing.Image)(resources.GetObject("fontToolStripExt.Image")));
-            this.fontToolStripExt.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripPanelItem2,
-            this.toolStripButton71,
-            this.toolStripButton74,
-            this.boldToolstripBtn,
-            this.underlineToolStripSplitBtn,
-            this.italicToolStripBtn,
-            this.toolStripSeparator3,
-            this.bottomBorderToolStripButton,
-            this.topBorderToolStripButton,
-            this.leftBorderToolStripButton,
-            this.rightBorderToolStripButton,
-            this.noBorderToolStripButton5,
-            this.toolStripSeparator1,
-            this.toolStripDropDownButton1,
-            this.toolStripDropDownButton2});
-            this.fontToolStripExt.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.fontToolStripExt.Location = new System.Drawing.Point(121, 1);
-            this.fontToolStripExt.Name = "fontToolStripExt";
-            this.fontToolStripExt.Office12Mode = false;
-            this.fontToolStripExt.Padding = new System.Windows.Forms.Padding(5);
-            this.fontToolStripExt.Size = new System.Drawing.Size(284, 97);
-            this.fontToolStripExt.TabIndex = 6;
-            this.fontToolStripExt.Text = "Font";
             // 
             // toolStripPanelItem2
             // 
@@ -759,31 +651,6 @@ namespace Financology.Watchlist
             this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
             this.toolStripDropDownButton2.Size = new System.Drawing.Size(29, 20);
             this.toolStripDropDownButton2.Text = "toolStripDropDownButton2";
-            // 
-            // paragraphToolStripExt
-            // 
-            this.paragraphToolStripExt.AutoSize = false;
-            this.superAccelerator1.SetCollapsedDropDownAccelerator(this.paragraphToolStripExt, null);
-            this.paragraphToolStripExt.CollapsedDropDownButtonText = "Paragraph";
-            this.paragraphToolStripExt.DefaultDropDownDirection = System.Windows.Forms.ToolStripDropDownDirection.BelowRight;
-            this.paragraphToolStripExt.Dock = System.Windows.Forms.DockStyle.None;
-            this.paragraphToolStripExt.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.paragraphToolStripExt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.paragraphToolStripExt.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.paragraphToolStripExt.GroupedButtons = true;
-            this.paragraphToolStripExt.Image = ((System.Drawing.Image)(resources.GetObject("paragraphToolStripExt.Image")));
-            this.paragraphToolStripExt.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripPanelItem54,
-            this.toolStripSeparator2,
-            this.toolStripPanelItem3});
-            this.paragraphToolStripExt.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.paragraphToolStripExt.Location = new System.Drawing.Point(407, 1);
-            this.paragraphToolStripExt.Name = "paragraphToolStripExt";
-            this.paragraphToolStripExt.Office12Mode = false;
-            this.paragraphToolStripExt.Padding = new System.Windows.Forms.Padding(5);
-            this.paragraphToolStripExt.Size = new System.Drawing.Size(197, 97);
-            this.paragraphToolStripExt.TabIndex = 7;
-            this.paragraphToolStripExt.Text = "Alignment";
             // 
             // toolStripPanelItem54
             // 
@@ -3799,10 +3666,6 @@ namespace Financology.Watchlist
             this.imageList1.Images.SetKeyName(1, "Edit_UndoHS.png");
             this.imageList1.Images.SetKeyName(2, "Edit_RedoHS.png");
             // 
-            // superToolTip1
-            // 
-            this.superToolTip1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(158)))), ((int)(((byte)(218)))));
-            // 
             // toolStripCheckBox4
             // 
             this.toolStripCheckBox4.Name = "toolStripCheckBox4";
@@ -3878,7 +3741,7 @@ namespace Financology.Watchlist
             this.Name = "Watchlist";
             this.Padding = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Excel Like UI";
+            this.Text = "Watchlist";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Watchlist_Load);
             ((System.ComponentModel.ISupportInitialize)(this.excelRibbon)).EndInit();
@@ -3886,12 +3749,6 @@ namespace Financology.Watchlist
             this.excelRibbon.PerformLayout();
             this.toolStripTabItem1.Panel.ResumeLayout(false);
             this.toolStripTabItem1.Panel.PerformLayout();
-            this.clipboardToolStripExt.ResumeLayout(false);
-            this.clipboardToolStripExt.PerformLayout();
-            this.fontToolStripExt.ResumeLayout(false);
-            this.fontToolStripExt.PerformLayout();
-            this.paragraphToolStripExt.ResumeLayout(false);
-            this.paragraphToolStripExt.PerformLayout();
             this.toolStripTabItem7.Panel.ResumeLayout(false);
             this.toolStripEx22.ResumeLayout(false);
             this.toolStripEx22.PerformLayout();
@@ -3912,17 +3769,14 @@ namespace Financology.Watchlist
 
         private Syncfusion.Windows.Forms.Tools.RibbonControlAdv excelRibbon;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem1;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx clipboardToolStripExt;
         private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem15;
         private System.Windows.Forms.ToolStripButton toolStripBtnPaste;
         private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem1;
         private System.Windows.Forms.ToolStripButton toolStripBtnCut;
         private System.Windows.Forms.ToolStripButton toolStripBtnCopy;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx fontToolStripExt;
         private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem2;
         private System.Windows.Forms.ToolStripComboBox toolStripFontfaceComboBox;
         private System.Windows.Forms.ToolStripComboBox toolStripFontSizeComboBox;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx paragraphToolStripExt;
         private System.Windows.Forms.ToolStripButton lAlignToolStripBtn;
         private System.Windows.Forms.ToolStripButton centerToolStripBtn;
         private System.Windows.Forms.ToolStripButton rAlignToolStripBtn;

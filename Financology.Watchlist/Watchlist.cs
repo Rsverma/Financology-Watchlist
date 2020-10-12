@@ -396,12 +396,6 @@ namespace Financology.Watchlist
             this.gridAwareTextBoxItem2.MinWidth = this.Width - (this.gridAwareTextBoxItem1.MinWidth + 66);
         }
 
-        // Triggers when double-clicking the menu button.
-        private void excelRibbon_MenuButtonDoubleClick(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void toolStripButton81_Click(object sender, EventArgs e)
         {
             WorkBook workBook = new WorkBook(this);
@@ -624,6 +618,7 @@ namespace Financology.Watchlist
 
         void _grid_CurrentCellActivated(object sender, EventArgs e)
         {
+            
             this.UpdateFontStyles(workBook._grid); ;
         }
 

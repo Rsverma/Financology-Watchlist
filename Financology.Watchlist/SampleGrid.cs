@@ -141,13 +141,14 @@ namespace Financology.Watchlist
             model.BeginInit();
             //setting properties.
             GridFormulaCellRenderer.ForceEditWhenActivated = false;
-            model.RowCount = 100;
-            model.ColCount = 100;
+            model.RowCount = 30;
+            model.ColCount = 30;
             model.Rows.DefaultSize = 19;
             model.Cols.DefaultSize = 65;
             model.RowHeights[0] = 21;
             model.ColWidths[0] = 35;
             model.Options.ControllerOptions = GridControllerOptions.All | GridControllerOptions.ExcelLikeSelection;
+            
             model.TableStyle.CellType = "FormulaCell";
             model.Options.ActivateCurrentCellBehavior = GridCellActivateAction.DblClickOnCell;
             model.CommandStack.Enabled = true;
