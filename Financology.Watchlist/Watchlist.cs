@@ -209,6 +209,7 @@ namespace Financology.Watchlist
         private void ChooserButton_Click(object sender, EventArgs e)
         {
             this.columnChooser.ShowDialog();
+            this.chooserButton.Enabled = false;
         }
 
         void openBackStageButton_Click(object sender, EventArgs e)

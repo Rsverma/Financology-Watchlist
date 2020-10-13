@@ -106,6 +106,7 @@ namespace Financology.Watchlist
             _grid.AllowEditing = false;
             _grid.DataSource = _dm.liveFeeds;
             _grid.VisibleChanged += new EventHandler(_grid_VisibleChanged);
+            _grid.AllowResizingColumns = true;
             i++;
             this.ResumeLayout(true);
             #endregion
