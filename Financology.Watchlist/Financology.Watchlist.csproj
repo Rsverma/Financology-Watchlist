@@ -1,22 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Syncfusion.GridHelperClasses.Windows" Version="18.3.0.38" />
-        <PackageReference Include="Syncfusion.Grid.Windows" Version="18.3.0.38" />
-    <PackageReference Include="Syncfusion.SfDataGrid.Winforms" Version="18.3.0.38" />
-    <PackageReference Include="Syncfusion.Tools.Windows" Version="18.3.0.38" />
-    <PackageReference Include="Syncfusion.Spreadsheet.Windows" Version="18.3.0.38" />
-</ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Financology.APIFactory\Financology.APIFactory.csproj" />
-      <ProjectReference Include="..\Financology.BusinessLogic\Financology.BusinessLogic.csproj" />
-      <ProjectReference Include="..\Financology.BusinessObjects\Financology.BusinessObjects.csproj" />
-    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Financology.APIFactory\Financology.APIFactory.csproj" />
+    <ProjectReference Include="..\Financology.BusinessLogic\Financology.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Financology.BusinessObjects\Financology.BusinessObjects.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.Core.WinForms">
+      <HintPath>..\..\SyncFusion\Windows\18.3.0.35\precompiledassemblies\netcoreapp3.1\Syncfusion.Core.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Data.WinForms">
+      <HintPath>..\..\SyncFusion\Windows\18.3.0.35\precompiledassemblies\netcoreapp3.1\Syncfusion.Data.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Windows">
+      <HintPath>..\..\SyncFusion\Windows\18.3.0.35\precompiledassemblies\netcoreapp3.1\Syncfusion.Grid.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.WinForms">
+      <HintPath>..\..\SyncFusion\Windows\18.3.0.35\precompiledassemblies\netcoreapp3.1\Syncfusion.GridCommon.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridHelperClasses.Windows">
+      <HintPath>..\..\SyncFusion\Windows\18.3.0.35\precompiledassemblies\netcoreapp3.1\Syncfusion.GridHelperClasses.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.WinForms">
+      <HintPath>..\..\SyncFusion\Windows\18.3.0.35\precompiledassemblies\netcoreapp3.1\Syncfusion.SfDataGrid.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfInput.WinForms">
+      <HintPath>..\..\SyncFusion\Windows\18.3.0.35\precompiledassemblies\netcoreapp3.1\Syncfusion.SfInput.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfListView.WinForms">
+      <HintPath>..\..\SyncFusion\Windows\18.3.0.35\precompiledassemblies\netcoreapp3.1\Syncfusion.SfListView.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base">
+      <HintPath>..\..\SyncFusion\Windows\18.3.0.35\precompiledassemblies\netcoreapp3.1\Syncfusion.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Spreadsheet.Windows">
+      <HintPath>..\..\SyncFusion\Windows\18.3.0.35\precompiledassemblies\netcoreapp3.1\Syncfusion.Spreadsheet.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Windows">
+      <HintPath>..\..\SyncFusion\Windows\18.3.0.35\precompiledassemblies\netcoreapp3.1\Syncfusion.Tools.Windows.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

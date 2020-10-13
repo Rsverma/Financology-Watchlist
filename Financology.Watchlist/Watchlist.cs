@@ -12,31 +12,15 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Collections;
-using System.ComponentModel;
-using System.ComponentModel.Design;
-using Syncfusion.Windows.Forms;
-using Syncfusion.Windows.Forms.Design;
-using Syncfusion.Collections;
-using Syncfusion.ComponentModel;
-using System.Drawing.Design;
-using System.Collections.Specialized;
 using System.Diagnostics;
-using System.Runtime.Serialization;
-using System.Reflection;
-using Syncfusion.Runtime.Serialization;
-
-using Syncfusion.Windows.Forms.Grid;
-
 using Syncfusion.Windows.Forms.Tools;
-using Syncfusion.GridHelperClasses;
+using Syncfusion.WinForms.DataGrid.Interactivity;
 
 namespace Financology.Watchlist
 {
     public partial class Watchlist : RibbonForm
     {
         #region [private Variables ]
-        private static int accCount = 1;
         Panel TabBarPane = new Panel();
         Panel newPanel = new Panel();
         #endregion
@@ -101,6 +85,7 @@ namespace Financology.Watchlist
             topPanel.Dock = DockStyle.Top;
             TabBarPane.Size = new System.Drawing.Size(500, 500);
 
+            this.columnChooser = new ColumnChooserPopup(workBook._grid);
             BackPanel.Dock = DockStyle.Fill;
             TabBarPane.Controls.Add(workBook._grid);
             this.xpToolBar1.Bar.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {
@@ -223,7 +208,7 @@ namespace Financology.Watchlist
 
         void openBackStageButton_Click(object sender, EventArgs e)
         {
-            Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
+            //Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
 
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Files(*.xlsx)|*.xlsx";
@@ -238,7 +223,7 @@ namespace Financology.Watchlist
 
         void saveAsBackStageButton_Click(object sender, EventArgs e)
         {
-            Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
+            //Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
 
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "Files(*.xlsx)|*.xlsx|Files(*.xls)|*.xls";
@@ -303,7 +288,7 @@ namespace Financology.Watchlist
 
         void saveBtn_Click(object sender, EventArgs e)
         {
-            Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
+            //Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
 
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "Files(*.xlsx)|*.xlsx|Files(*.xls)|*.xls";

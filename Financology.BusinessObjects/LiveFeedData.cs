@@ -7,9 +7,14 @@ namespace Financology.BusinessObjects
         public string Symbol { get; set; }
         public double Ask { get; set; }
         public double Bid { get; set; }
+        public double Last { get; set; }
+        public double High { get; set; }
+        public double Low { get; set; }
+        public double Open { get; set; }
+        public double Change { get; set; }
+        public string Asset { get; set; }
         public string language { get; set; }
         public string region { get; set; }
-        public string quoteType { get; set; }
         public string quoteSourceName { get; set; }
         public bool triggerable { get; set; }
         public string currency { get; set; }
@@ -19,20 +24,15 @@ namespace Financology.BusinessObjects
         public int postMarketTime { get; set; }
         public double postMarketPrice { get; set; }
         public double postMarketChange { get; set; }
-        public double regularMarketChange { get; set; }
         public double regularMarketChangePercent { get; set; }
         public int regularMarketTime { get; set; }
-        public double regularMarketPrice { get; set; }
-        public double regularMarketDayHigh { get; set; }
         public string regularMarketDayRange { get; set; }
-        public double regularMarketDayLow { get; set; }
         public int regularMarketVolume { get; set; }
         public double regularMarketPreviousClose { get; set; }
         public int bidSize { get; set; }
         public int askSize { get; set; }
         public string fullExchangeName { get; set; }
         public string financialCurrency { get; set; }
-        public double regularMarketOpen { get; set; }
         public int averageDailyVolume3Month { get; set; }
         public int averageDailyVolume10Day { get; set; }
         public double fiftyTwoWeekLowChange { get; set; }

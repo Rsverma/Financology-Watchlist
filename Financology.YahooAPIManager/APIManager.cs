@@ -38,7 +38,7 @@ namespace Financology.YahooAPIManager
 
             data.language = result.language;
             data.region = result.region;
-            data.quoteType = result.quoteType;
+            data.Asset = result.quoteType;
             data.quoteSourceName = result.quoteSourceName;
             data.triggerable = result.triggerable;
             data.currency = result.currency;
@@ -48,13 +48,13 @@ namespace Financology.YahooAPIManager
             data.postMarketTime = result.postMarketTime;
             data.postMarketPrice = result.postMarketPrice;
             data.postMarketChange = result.postMarketChange;
-            data.regularMarketChange = result.regularMarketChange;
+            data.Change = result.regularMarketChange;
             data.regularMarketChangePercent = result.regularMarketChangePercent;
             data.regularMarketTime = result.regularMarketTime;
-            data.regularMarketPrice = result.regularMarketPrice;
-            data.regularMarketDayHigh = result.regularMarketDayHigh;
+            data.Last = result.regularMarketPrice;
+            data.High = result.regularMarketDayHigh;
             data.regularMarketDayRange = result.regularMarketDayRange;
-            data.regularMarketDayLow = result.regularMarketDayLow;
+            data.Low = result.regularMarketDayLow;
             data.regularMarketVolume = result.regularMarketVolume;
             data.regularMarketPreviousClose = result.regularMarketPreviousClose;
             data.Bid = result.bid;
@@ -63,7 +63,7 @@ namespace Financology.YahooAPIManager
             data.askSize = result.askSize;
             data.fullExchangeName = result.fullExchangeName;
             data.financialCurrency = result.financialCurrency;
-            data.regularMarketOpen = result.regularMarketOpen;
+            data.Open = result.regularMarketOpen;
             data.averageDailyVolume3Month = result.averageDailyVolume3Month;
             data.averageDailyVolume10Day = result.averageDailyVolume10Day;
             data.fiftyTwoWeekLowChange = result.fiftyTwoWeekLowChange;

@@ -16,7 +16,7 @@ namespace Financology.Watchlist
 
         public DataManager()
         {
-            dataDict = aPIManager.GetLiveFeedDictionary(new List<string>() { "AAPL" });
+            dataDict = aPIManager.GetLiveFeedDictionary(new List<string>() { "AAPL","MSFT","GOOG","tcs.ns" });
             foreach (LiveFeedData data in dataDict.Values)
             {
                 liveFeeds.Add(data);

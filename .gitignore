@@ -1,0 +1,11 @@
+Financology.APIFactory/bin
+Financology.APIFactory/obj
+Financology.BusinessLogic/bin
+Financology.BusinessObjects/bin
+Financology.YahooAPIManager/bin
+Financology.BusinessLogic/obj
+Financology.BusinessObjects/obj
+Financology.YahooAPIManager/obj
+Financology.Watchlist/bin
+Financology.Watchlist/obj
+.vs
