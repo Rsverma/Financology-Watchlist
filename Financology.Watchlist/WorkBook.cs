@@ -937,8 +937,6 @@ namespace Financology.Watchlist
         private void WorkBook_Activated(object sender, System.EventArgs e)
         {
             (this.MdiParent as Watchlist).workBook = this;
-            (this.MdiParent as Watchlist).gridAwareTextBoxItem1.WireGridAwareTextBox(this.gridAwareTextBox1, this._grid, true);
-            (this.MdiParent as Watchlist).gridAwareTextBoxItem2.WireGridAwareTextBox(this.gridAwareTextBox2, this._grid, false);
             this.RegisterGrid();
         }
 

@@ -57,8 +57,6 @@ namespace Financology.Watchlist
             this.officeButton120 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
             this.officeButton121 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.colorPickerFont = new Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv();
             this.colorPickerBackground = new Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv();
             this.toolStripSplitButtonEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripSplitButtonEx();
@@ -74,40 +72,6 @@ namespace Financology.Watchlist
             this.barItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
             this.barItem2 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
             this.SapleBarIte = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton18 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.officeSplitButton3 = new Syncfusion.Windows.Forms.Tools.OfficeSplitButton();
-            this.officeButton21 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton22 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton23 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton24 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton25 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.officeSplitButton4 = new Syncfusion.Windows.Forms.Tools.OfficeSplitButton();
-            this.officeButton26 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton27 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton28 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeDropDownButton2 = new Syncfusion.Windows.Forms.Tools.OfficeDropDownButton();
-            this.officeButton29 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton30 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton31 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton32 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton33 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton34 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton35 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeDropDownButton5 = new Syncfusion.Windows.Forms.Tools.OfficeDropDownButton();
-            this.officeButton36 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton37 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeDropDownButton6 = new Syncfusion.Windows.Forms.Tools.OfficeDropDownButton();
-            this.officeButton38 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton39 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.officeButton40 = new Syncfusion.Windows.Forms.Tools.OfficeButton();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton64 = new System.Windows.Forms.ToolStripButton();
             this.superAccelerator1 = new Syncfusion.Windows.Forms.Tools.SuperAccelerator(this);
             this.toolStripButton69 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton70 = new System.Windows.Forms.ToolStripButton();
@@ -235,8 +199,6 @@ namespace Financology.Watchlist
             this.toolStripButton99 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton25 = new System.Windows.Forms.ToolStripButton();
             this.toolStripPanelItem28 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-            this.gridAwareTextBoxItem1 = new Financology.Watchlist.GridAwareTextBoxBarItem();
-            this.gridAwareTextBoxItem2 = new Financology.Watchlist.GridAwareTextBoxBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.excelRibbon)).BeginInit();
             this.excelRibbon.SuspendLayout();
             this.toolStripTabItem1.Panel.SuspendLayout();
@@ -248,7 +210,6 @@ namespace Financology.Watchlist
             this.excelRibbon.CaptionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.excelRibbon.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.excelRibbon.Header.AddMainItem(toolStripTabItem1);
-            //this.excelRibbon.Header.AddMainItem(toolStripTabItem7);
             this.excelRibbon.Location = new System.Drawing.Point(1, 1);
             this.excelRibbon.MenuButtonFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.excelRibbon.MenuButtonText = "FILE";
@@ -285,36 +246,6 @@ namespace Financology.Watchlist
             this.toolStripTabItem1.Position = 0;
             this.toolStripTabItem1.Size = new System.Drawing.Size(54, 24);
             this.toolStripTabItem1.Text = "ADD/EDIT";
-            // colorPickerFont
-            // 
-            this.colorPickerFont.BeforeTouchSize = new System.Drawing.Size(13, 13);
-            this.colorPickerFont.ColorItemSize = new System.Drawing.Size(13, 13);
-            this.colorPickerFont.Location = new System.Drawing.Point(1, 3);
-            this.colorPickerFont.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.colorPickerFont.MinimumSize = new System.Drawing.Size(136, 163);
-            this.colorPickerFont.Name = "colorPickerFont";
-            this.colorPickerFont.SelectedColor = System.Drawing.Color.Empty;
-            this.colorPickerFont.Size = new System.Drawing.Size(172, 163);
-            this.colorPickerFont.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.visualstyle.Default;
-            this.colorPickerFont.TabIndex = 0;
-            this.colorPickerFont.UseOffice2007Style = false;
-            // 
-            // colorPickerBackground
-            // 
-            this.colorPickerBackground.BeforeTouchSize = new System.Drawing.Size(13, 13);
-            this.colorPickerBackground.ColorItemSize = new System.Drawing.Size(13, 13);
-            this.colorPickerBackground.Location = new System.Drawing.Point(1, 3);
-            this.colorPickerBackground.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.colorPickerBackground.MinimumSize = new System.Drawing.Size(136, 163);
-            this.colorPickerBackground.Name = "colorPickerBackground";
-            this.colorPickerBackground.SelectedColor = System.Drawing.Color.Empty;
-            this.colorPickerBackground.Size = new System.Drawing.Size(172, 163);
-            this.colorPickerBackground.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.visualstyle.Default;
-            this.colorPickerBackground.TabIndex = 0;
-            this.colorPickerBackground.UseOffice2007Style = false;
-            // 
-            // toolStripButton28
-            // 
             // scrollersFrame1
             // 
             this.scrollersFrame1.AttachedTo = this.excelRibbon;
@@ -347,33 +278,6 @@ namespace Financology.Watchlist
             this.imageList1.Images.SetKeyName(0, "saveHS.png");
             this.imageList1.Images.SetKeyName(1, "Edit_UndoHS.png");
             this.imageList1.Images.SetKeyName(2, "Edit_RedoHS.png");
-            // 
-            // gridAwareTextBoxItem1
-            // 
-            this.gridAwareTextBoxItem1.BarName = "gridAwareTextBoxItem1";
-            this.gridAwareTextBoxItem1.CategoryIndex = 12;
-            this.gridAwareTextBoxItem1.CustomTextFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridAwareTextBoxItem1.ID = "GridAwareTextBox1";
-            this.gridAwareTextBoxItem1.MinWidth = 200;
-            this.gridAwareTextBoxItem1.ShowToolTipInPopUp = false;
-            this.gridAwareTextBoxItem1.SizeToFit = true;
-            this.gridAwareTextBoxItem1.Text = "GridAwareTextBox1";
-            this.gridAwareTextBoxItem1.TextBoxValue = null;
-            this.gridAwareTextBoxItem1.Value = null;
-            // 
-            // gridAwareTextBoxItem2
-            // 
-            this.gridAwareTextBoxItem2.BarName = "gridAwareTextBoxItem2";
-            this.gridAwareTextBoxItem2.CategoryIndex = 12;
-            this.gridAwareTextBoxItem2.CustomTextFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridAwareTextBoxItem2.ID = "GridAwareTextBox2";
-            this.gridAwareTextBoxItem2.MinWidth = 600;
-            this.gridAwareTextBoxItem2.ShowToolTipInPopUp = false;
-            this.gridAwareTextBoxItem2.SizeToFit = true;
-            this.gridAwareTextBoxItem2.Text = "GridAwareTextBox2";
-            this.gridAwareTextBoxItem2.TextBoxValue = null;
-            this.gridAwareTextBoxItem2.Value = null;
-            // 
             // Watchlist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,50 +312,12 @@ namespace Financology.Watchlist
         private Syncfusion.Windows.Forms.Tools.RibbonControlAdv excelRibbon;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem1;
 
-        internal Financology.Watchlist.GridAwareTextBoxBarItem gridAwareTextBoxItem1;
         internal WorkBook workBook = null;
 
-        internal GridAwareTextBoxBarItem gridAwareTextBoxItem2;
         private Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar xpToolBar1;
         private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem SapleBarIte;
         private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem1;
         private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem2;
-        private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton18;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private Syncfusion.Windows.Forms.Tools.OfficeSplitButton officeSplitButton3;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton21;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton22;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton23;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton24;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton25;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private Syncfusion.Windows.Forms.Tools.OfficeSplitButton officeSplitButton4;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton26;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton27;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton28;
-        private Syncfusion.Windows.Forms.Tools.OfficeDropDownButton officeDropDownButton2;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton29;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton30;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton31;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton32;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton33;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton34;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton35;
-        private Syncfusion.Windows.Forms.Tools.OfficeDropDownButton officeDropDownButton5;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton36;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton37;
-        private Syncfusion.Windows.Forms.Tools.OfficeDropDownButton officeDropDownButton6;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton38;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton39;
-        private Syncfusion.Windows.Forms.Tools.OfficeButton officeButton40;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripButton toolStripButton8;
-        private System.Windows.Forms.ToolStripButton toolStripButton64;
         private Syncfusion.Windows.Forms.Tools.SuperAccelerator superAccelerator1;
 
         private System.Windows.Forms.ToolStripButton toolStripButton69;

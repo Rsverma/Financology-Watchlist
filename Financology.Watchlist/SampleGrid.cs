@@ -150,7 +150,7 @@ namespace Financology.Watchlist
             model.Options.ControllerOptions = GridControllerOptions.All | GridControllerOptions.ExcelLikeSelection;
             
             model.TableStyle.CellType = "FormulaCell";
-            model.Options.ActivateCurrentCellBehavior = GridCellActivateAction.DblClickOnCell;
+            model.Options.ActivateCurrentCellBehavior = GridCellActivateAction.None;
             model.CommandStack.Enabled = true;
             model.CellModels.Add("LinkLabel", new LinkLabelCellModel(model));
             model.EndInit();

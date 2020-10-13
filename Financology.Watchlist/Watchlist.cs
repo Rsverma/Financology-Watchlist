@@ -94,8 +94,6 @@ namespace Financology.Watchlist
             #region [WorkBook]
             // Create a new child
             WorkBook workBook = new WorkBook(this);
-            this.gridAwareTextBoxItem1.WireGridAwareTextBox(workBook.gridAwareTextBox1, workBook._grid, true);
-            this.gridAwareTextBoxItem2.WireGridAwareTextBox(workBook.gridAwareTextBox2, workBook._grid, false);
             this.workBook = workBook;
             Panel BackPanel = new Panel();
             Panel topPanel = new Panel();
@@ -106,10 +104,8 @@ namespace Financology.Watchlist
             BackPanel.Dock = DockStyle.Fill;
             TabBarPane.Controls.Add(workBook.tabBarSplitterControl);
             this.xpToolBar1.Bar.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {
-            this.gridAwareTextBoxItem1,
             this.barItem1,
-            this.barItem2,
-            this.gridAwareTextBoxItem2});
+            this.barItem2});
             System.ComponentModel.ComponentResourceManager resources1 = new System.ComponentModel.ComponentResourceManager(typeof(Watchlist));
             this.barItem1.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources1.GetObject("barItem1.Image")));
             this.barItem2.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources1.GetObject("barItem2.Image")));
@@ -338,11 +334,6 @@ namespace Financology.Watchlist
                     proc.Start();
                 }
             }
-        }
-
-        private void Watchlist_Resize(object sender, EventArgs e)
-        {
-            this.gridAwareTextBoxItem2.MinWidth = this.Width - (this.gridAwareTextBoxItem1.MinWidth + 66);
         }
 
         private void toolStripPanelItem15_Click(object sender, EventArgs e)
