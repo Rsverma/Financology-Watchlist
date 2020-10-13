@@ -11,6 +11,7 @@
 
 using System;
 using System.Collections;
+using System.Drawing;
 using System.Windows.Forms;
 
 using Syncfusion.Windows.Forms;
@@ -27,7 +28,6 @@ namespace Financology.Watchlist
         private System.ComponentModel.IContainer components = null;
         internal SfDataGrid _grid = null;
         Watchlist form;
-        private DataManager _dm = null;
         #endregion
 
         #region Constructor
@@ -37,7 +37,7 @@ namespace Financology.Watchlist
             // Required for Windows Form Designer support
             //
             InitializeComponent();
-            _dm = new DataManager();
+            
             this.MyInit();
             form = frm;
         }
@@ -104,12 +104,24 @@ namespace Financology.Watchlist
             _grid.Name = string.Format("SfDataGrid{0}", i + 1);
             _grid.Text = string.Format("SfDataGrid{0}", i + 1);
             _grid.AllowEditing = false;
-            _grid.DataSource = _dm.liveFeeds;
+            _grid.DataSource = DataManager.instance.liveFeeds;
             _grid.VisibleChanged += new EventHandler(_grid_VisibleChanged);
+            _grid.QueryCellStyle += _grid_QueryCellStyle;
             _grid.AllowResizingColumns = true;
+            _grid.AllowDraggingColumns = true;
+            _grid.AllowFiltering = true;
+            _grid.AllowSorting = true;
+            _grid.Style.HeaderStyle.BackColor = Color.FromArgb(100,62,86,125);
+            _grid.Style.HeaderStyle.Font = new Syncfusion.WinForms.DataGrid.Styles.GridFontInfo(new Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
             i++;
             this.ResumeLayout(true);
             #endregion
+        }
+
+        private void _grid_QueryCellStyle(object sender, Syncfusion.WinForms.DataGrid.Events.QueryCellStyleEventArgs e)
+        {
+            if (e.Column.HeaderText.Equals("Ask") && DataManager.instance.colors.ContainsKey(e.RowIndex) && DataManager.instance.colors[e.RowIndex].isAskgreater.HasValue)
+                e.Style.TextColor = DataManager.instance.colors[e.RowIndex].isAskgreater.Value ? Color.Green : Color.Red;
         }
 
         #endregion

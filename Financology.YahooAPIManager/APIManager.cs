@@ -49,15 +49,19 @@ namespace Financology.YahooAPIManager
             data.postMarketPrice = result.postMarketPrice;
             data.postMarketChange = result.postMarketChange;
             data.Change = result.regularMarketChange;
-            data.regularMarketChangePercent = result.regularMarketChangePercent;
+            data.ChangePercent = result.regularMarketChangePercent;
             data.regularMarketTime = result.regularMarketTime;
             data.Last = result.regularMarketPrice;
             data.High = result.regularMarketDayHigh;
             data.regularMarketDayRange = result.regularMarketDayRange;
             data.Low = result.regularMarketDayLow;
             data.regularMarketVolume = result.regularMarketVolume;
-            data.regularMarketPreviousClose = result.regularMarketPreviousClose;
+            data.Close = result.regularMarketPreviousClose;
             data.Bid = result.bid;
+            if (result.ask > data.Ask)
+                data.isAskgreater = true;
+            else if (result.ask < data.Ask)
+                data.isAskgreater = false;
             data.Ask = result.ask;
             data.bidSize = result.bidSize;
             data.askSize = result.askSize;

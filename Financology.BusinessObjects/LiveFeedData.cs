@@ -6,12 +6,15 @@ namespace Financology.BusinessObjects
     {
         public string Symbol { get; set; }
         public double Ask { get; set; }
+        public bool? isAskgreater { get; set; }
         public double Bid { get; set; }
         public double Last { get; set; }
         public double High { get; set; }
         public double Low { get; set; }
         public double Open { get; set; }
         public double Change { get; set; }
+        public double ChangePercent { get; set; }
+        public double Close { get; set; }
         public string Asset { get; set; }
         public string language { get; set; }
         public string region { get; set; }
@@ -24,11 +27,9 @@ namespace Financology.BusinessObjects
         public int postMarketTime { get; set; }
         public double postMarketPrice { get; set; }
         public double postMarketChange { get; set; }
-        public double regularMarketChangePercent { get; set; }
         public int regularMarketTime { get; set; }
         public string regularMarketDayRange { get; set; }
         public int regularMarketVolume { get; set; }
-        public double regularMarketPreviousClose { get; set; }
         public int bidSize { get; set; }
         public int askSize { get; set; }
         public string fullExchangeName { get; set; }
@@ -78,5 +79,16 @@ namespace Financology.BusinessObjects
         public string market { get; set; }
         public bool esgPopulated { get; set; }
         public string displayName { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            return obj is LiveFeedData data &&
+                   Symbol == data.Symbol;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Symbol);
+        }
     }
 }

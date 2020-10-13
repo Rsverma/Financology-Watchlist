@@ -15,6 +15,8 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using Syncfusion.Windows.Forms.Tools;
 using Syncfusion.WinForms.DataGrid.Interactivity;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace Financology.Watchlist
 {
@@ -210,6 +212,17 @@ namespace Financology.Watchlist
         {
             this.columnChooser.ShowDialog();
             this.chooserButton.Enabled = false;
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(symbolBox.Text))
+                MessageBox.Show("Please enter a valid symbol");
+            else
+            {
+                DataManager.instance.AddSymbol(symbolBox.Text);
+                symbolBox.Text = string.Empty;
+            }
         }
 
         void openBackStageButton_Click(object sender, EventArgs e)

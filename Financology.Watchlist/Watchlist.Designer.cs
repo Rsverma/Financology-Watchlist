@@ -8,6 +8,8 @@
 using System.Drawing;
 using System;
 using Syncfusion.WinForms.DataGrid.Interactivity;
+using Syncfusion.WinForms.Controls;
+using Syncfusion.Windows.Forms.Tools;
 
 namespace Financology.Watchlist
 {
@@ -31,7 +33,9 @@ namespace Financology.Watchlist
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Watchlist));
             this.excelRibbon = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.chooserButton = new System.Windows.Forms.Button();
+            this.chooserButton = new SfButton();
+            this.symbolBox = new TextBoxExt();
+            this.addButton = new SfButton();
             this.xpToolBar1 = new Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar();
             this.barItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
             this.barItem2 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
@@ -81,6 +85,8 @@ namespace Financology.Watchlist
             // 
             // 
             this.toolStripTabItem1.Panel.Controls.Add(this.chooserButton);
+            this.toolStripTabItem1.Panel.Controls.Add(this.symbolBox);
+            this.toolStripTabItem1.Panel.Controls.Add(this.addButton);
             this.toolStripTabItem1.Panel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.toolStripTabItem1.Panel.Name = "ribbonPanel1";
             this.toolStripTabItem1.Panel.Padding = new System.Windows.Forms.Padding(0, 1, 41, 0);
@@ -95,11 +101,28 @@ namespace Financology.Watchlist
             // 
             this.chooserButton.Location = new System.Drawing.Point(6, 6);
             this.chooserButton.Name = "chooserButton";
-            this.chooserButton.Size = new System.Drawing.Size(75, 23);
+            this.chooserButton.Size = new System.Drawing.Size(20, 20);
             this.chooserButton.TabIndex = 2;
-            this.chooserButton.Text = "Columns";
+            this.chooserButton.Text = "";
             this.chooserButton.UseVisualStyleBackColor = true;
             this.chooserButton.Click += ChooserButton_Click;
+            // 
+            // symbolBox
+            // 
+            this.symbolBox.Location = new System.Drawing.Point(126, 6);
+            this.symbolBox.Name = "symbolBox";
+            this.symbolBox.Size = new System.Drawing.Size(275, 35);
+            this.symbolBox.TabIndex = 3;
+            // 
+            // chooserButton
+            // 
+            this.addButton.Location = new System.Drawing.Point(410, 6);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.TabIndex = 4;
+            this.addButton.Text = "Add";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += addButton_Click;
             // scrollersFrame1
             // 
             this.scrollersFrame1.AttachedTo = this.excelRibbon;
@@ -189,7 +212,9 @@ namespace Financology.Watchlist
             }
         }
 
-        private System.Windows.Forms.Button chooserButton;
+        private SfButton chooserButton;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt  symbolBox;
+        private SfButton addButton;
     }
 }
 
