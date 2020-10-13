@@ -7,10 +7,16 @@
   </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Syncfusion.GridHelperClasses.Windows" Version="18.3.0.38"/>
-        <PackageReference Include="Syncfusion.Grid.Windows" Version="18.3.0.38"/>
-    <PackageReference Include="Syncfusion.SfDataGrid.Winforms" Version="18.3.0.38"/>
-    <PackageReference Include="Syncfusion.Tools.Windows" Version="18.3.0.38"/>
-    <PackageReference Include="Syncfusion.Spreadsheet.Windows" Version="18.3.0.38"/>
+        <PackageReference Include="Syncfusion.GridHelperClasses.Windows" Version="18.3.0.38" />
+        <PackageReference Include="Syncfusion.Grid.Windows" Version="18.3.0.38" />
+    <PackageReference Include="Syncfusion.SfDataGrid.Winforms" Version="18.3.0.38" />
+    <PackageReference Include="Syncfusion.Tools.Windows" Version="18.3.0.38" />
+    <PackageReference Include="Syncfusion.Spreadsheet.Windows" Version="18.3.0.38" />
 </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Financology.APIFactory\Financology.APIFactory.csproj" />
+      <ProjectReference Include="..\Financology.BusinessLogic\Financology.BusinessLogic.csproj" />
+      <ProjectReference Include="..\Financology.BusinessObjects\Financology.BusinessObjects.csproj" />
+    </ItemGroup>
 </Project>

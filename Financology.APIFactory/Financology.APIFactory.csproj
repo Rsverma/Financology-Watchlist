@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Financology.BusinessLogic\Financology.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Financology.BusinessObjects\Financology.BusinessObjects.csproj" />
+    <ProjectReference Include="..\Financology.YahooAPIManager\Financology.YahooAPIManager.csproj" />
+  </ItemGroup>
+
 </Project>

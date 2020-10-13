@@ -102,7 +102,7 @@ namespace Financology.Watchlist
             TabBarPane.Size = new System.Drawing.Size(500, 500);
 
             BackPanel.Dock = DockStyle.Fill;
-            TabBarPane.Controls.Add(workBook.tabBarSplitterControl);
+            TabBarPane.Controls.Add(workBook._grid);
             this.xpToolBar1.Bar.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {
             this.barItem1,
             this.barItem2});
@@ -110,8 +110,8 @@ namespace Financology.Watchlist
             this.barItem1.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources1.GetObject("barItem1.Image")));
             this.barItem2.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources1.GetObject("barItem2.Image")));
 
-            workBook.tabBarSplitterControl.BringToFront();
-            workBook.tabBarSplitterControl.Dock = DockStyle.Fill;
+            workBook._grid.BringToFront();
+            //workBook.tabBarSplitterControl.Dock = DockStyle.Fill;
 
             TabBarPane.BringToFront();
             TabBarPane.Dock = DockStyle.Fill;
@@ -121,11 +121,9 @@ namespace Financology.Watchlist
             newPanel.Dock = DockStyle.Top;
             BackPanel.Controls.Add(newPanel);
 
-            this.workBook.tabBarSplitterControl.EnableOffice2013Style = true;
-            this.workBook.tabBarSplitterControl.ShowAddNewTabBarPageOption = true;
-            this.workBook.tabBarSplitterControl.Style = TabBarSplitterStyle.Metro;
-            excelRibbon.Header.QuickItemAdded += new ToolStripItemEventHandler(Header_QuickItemAdded);
-            excelRibbon.Header.QuickItemRemoved += new ToolStripItemEventHandler(Header_QuickItemRemoved);
+            //this.workBook.tabBarSplitterControl.EnableOffice2013Style = true;
+            //this.workBook.tabBarSplitterControl.ShowAddNewTabBarPageOption = true;
+            //this.workBook.tabBarSplitterControl.Style = TabBarSplitterStyle.Metro;
 
             foreach (Control ctrl in this.Controls)
             {
@@ -231,8 +229,8 @@ namespace Financology.Watchlist
             openFileDialog.Filter = "Files(*.xlsx)|*.xlsx";
             openFileDialog.DefaultExt = ".xlsx";
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-                gecc.ExcelToGrid(openFileDialog.FileName, this.workBook._grid.Model);
+            //if (openFileDialog.ShowDialog() == DialogResult.OK)
+            //    gecc.ExcelToGrid(openFileDialog.FileName, this.workBook._grid.Model);
 
             this.workBook._grid.Refresh();
             this.backStageView1.BackStage.Visible = false;
@@ -248,7 +246,7 @@ namespace Financology.Watchlist
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                gecc.GridToExcel(this.workBook._grid.Model, saveFileDialog.FileName);
+                //gecc.GridToExcel(this.workBook._grid.Model, saveFileDialog.FileName);
 
                 if (MessageBox.Show("Do you wish to open the xls file now?", "Export to Excel", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
@@ -265,18 +263,6 @@ namespace Financology.Watchlist
             this.backStageView1.HostForm.Close();
         }
 
-        // Triggers when an item is added into quick access toolbar
-        void Header_QuickItemAdded(object sender, ToolStripItemEventArgs e)
-        {
-            this.superAccelerator1.SetAccelerator(e.Item, accCount.ToString());
-            accCount++;
-        }
-
-        // Triggers when an item is removed into quick access toolbar
-        void Header_QuickItemRemoved(object sender, ToolStripItemEventArgs e)
-        {
-            accCount--;
-        }
 
         private void QuickItems()
         {
@@ -301,18 +287,18 @@ namespace Financology.Watchlist
 
         void redoBtn_Click(object sender, EventArgs e)
         {
-            if (!this.workBook._grid.CommandStack.InTransaction)
-            {
-                this.workBook._grid.CommandStack.Redo();
-            }
+            //if (!this.workBook._grid.CommandStack.InTransaction)
+            //{
+            //    this.workBook._grid.CommandStack.Redo();
+            //}
         }
 
         void undoBtn_Click(object sender, EventArgs e)
         {
-            if (!this.workBook._grid.CommandStack.InTransaction)
-            {
-                this.workBook._grid.CommandStack.Undo();
-            }
+            //if (!this.workBook._grid.CommandStack.InTransaction)
+            //{
+            //    this.workBook._grid.CommandStack.Undo();
+            //}
         }
 
         void saveBtn_Click(object sender, EventArgs e)
@@ -325,7 +311,7 @@ namespace Financology.Watchlist
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                gecc.GridToExcel(this.workBook._grid.Model, saveFileDialog.FileName);
+                //gecc.GridToExcel(this.workBook._grid.Model, saveFileDialog.FileName);
 
                 if (MessageBox.Show("Do you wish to open the xls file now?", "Export to Excel", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {

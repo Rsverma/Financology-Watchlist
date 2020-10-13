@@ -4,9 +4,6 @@
     <Compile Update="GridAwareTextBoxBarItem.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="SampleGrid.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Update="Watchlist.cs">
       <SubType>Form</SubType>
     </Compile>
