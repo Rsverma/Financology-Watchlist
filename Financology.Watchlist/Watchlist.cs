@@ -206,6 +206,11 @@ namespace Financology.Watchlist
 
         #region [Events]
 
+        private void ChooserButton_Click(object sender, EventArgs e)
+        {
+            this.columnChooser.ShowDialog();
+        }
+
         void openBackStageButton_Click(object sender, EventArgs e)
         {
             //Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
