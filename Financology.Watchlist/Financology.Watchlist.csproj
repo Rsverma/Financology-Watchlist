@@ -9,6 +9,7 @@
     <ProjectReference Include="..\Financology.APIFactory\Financology.APIFactory.csproj" />
     <ProjectReference Include="..\Financology.BusinessLogic\Financology.BusinessLogic.csproj" />
     <ProjectReference Include="..\Financology.BusinessObjects\Financology.BusinessObjects.csproj" />
+    <ProjectReference Include="..\Financology.Logger\Financology.Logger.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Syncfusion.Core.WinForms">

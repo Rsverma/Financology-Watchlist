@@ -115,6 +115,7 @@ namespace Financology.Watchlist
             _grid.AllowSorting = true;
             _grid.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode.Single;
             _grid.Style.HeaderStyle.BackColor = Color.FromArgb(100,62,86,125);
+            _grid.Style.CellStyle.HorizontalAlignment = HorizontalAlignment.Center;
             _grid.Style.HeaderStyle.Font = new Syncfusion.WinForms.DataGrid.Styles.GridFontInfo(new Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
             _grid.RecordContextMenu = new ContextMenuStrip();
             _grid.RecordContextMenu.Items.Add("Delete", null, OnDeleteClicked);
@@ -135,6 +136,10 @@ namespace Financology.Watchlist
         {
             switch (e.Column.MappingName)
             {
+
+                case "Symbol":
+                    e.Style.Font.Bold = true;
+                    break;
                 case "Ask":
                     if (DataManager.instance.colors.ContainsKey(e.RowIndex) && DataManager.instance.colors[e.RowIndex].isAskGreater.HasValue)
                         e.Style.TextColor = DataManager.instance.colors[e.RowIndex].isAskGreater.Value ? Color.Green : Color.Red;

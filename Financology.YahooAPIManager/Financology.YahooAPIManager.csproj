@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Financology.BusinessLogic\Financology.BusinessLogic.csproj" />
     <ProjectReference Include="..\Financology.BusinessObjects\Financology.BusinessObjects.csproj" />
+    <ProjectReference Include="..\Financology.Logger\Financology.Logger.csproj" />
   </ItemGroup>
 
 </Project>
