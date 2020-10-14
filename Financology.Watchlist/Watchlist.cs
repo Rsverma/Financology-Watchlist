@@ -24,7 +24,6 @@ namespace Financology.Watchlist
     {
         #region [private Variables ]
         Panel TabBarPane = new Panel();
-        Panel newPanel = new Panel();
         #endregion
 
         #region [Constructor]
@@ -42,12 +41,6 @@ namespace Financology.Watchlist
             this.BackStageInitializeComponent();
             this.backStageView1.HostForm = this;
             this.excelRibbon.BackStageView = this.backStageView1;
-            newPanel.BorderStyle = BorderStyle.FixedSingle;
-            xpToolBar1.Dock = DockStyle.Fill;
-            newPanel.Size = xpToolBar1.Size;
-
-            this.Controls.Remove(this.xpToolBar1);
-            newPanel.Controls.Add(xpToolBar1);
         }
         #endregion
 
@@ -70,32 +63,18 @@ namespace Financology.Watchlist
         #region[Form Load]
         private void Watchlist_Load(object sender, EventArgs e)
         {
-            #region [Ribbon Related Changes]
-
-            QuickItems();
-
-
-            #endregion
-
             #region [WorkBook]
             // Create a new child
             WorkBook workBook = new WorkBook(this);
             this.workBook = workBook;
             Panel BackPanel = new Panel();
             Panel topPanel = new Panel();
-            this.Controls.Add(this.xpToolBar1);
             topPanel.Dock = DockStyle.Top;
-            TabBarPane.Size = new System.Drawing.Size(500, 500);
+            TabBarPane.Size = new System.Drawing.Size(500, 50);
 
             this.columnChooser = new ColumnChooserPopup(workBook._grid);
             BackPanel.Dock = DockStyle.Fill;
             TabBarPane.Controls.Add(workBook._grid);
-            this.xpToolBar1.Bar.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {
-            this.barItem1,
-            this.barItem2});
-            System.ComponentModel.ComponentResourceManager resources1 = new System.ComponentModel.ComponentResourceManager(typeof(Watchlist));
-            this.barItem1.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources1.GetObject("barItem1.Image")));
-            this.barItem2.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources1.GetObject("barItem2.Image")));
 
             workBook._grid.BringToFront();
             //workBook.tabBarSplitterControl.Dock = DockStyle.Fill;
@@ -105,8 +84,6 @@ namespace Financology.Watchlist
             BackPanel.Dock = DockStyle.Fill;
             this.Controls.Add(BackPanel);
             BackPanel.Controls.Add(TabBarPane);
-            newPanel.Dock = DockStyle.Top;
-            BackPanel.Controls.Add(newPanel);
 
             //this.workBook.tabBarSplitterControl.EnableOffice2013Style = true;
             //this.workBook.tabBarSplitterControl.ShowAddNewTabBarPageOption = true;
@@ -121,6 +98,12 @@ namespace Financology.Watchlist
                 }
             }
             #endregion
+            this.FormClosing += Watchlist_FormClosing;
+        }
+
+        private void Watchlist_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.backStageView1.HostForm.Close();
         }
         #endregion
 
@@ -267,28 +250,6 @@ namespace Financology.Watchlist
             this.backStageView1.HostForm.Close();
         }
 
-
-        private void QuickItems()
-        {
-            ToolStripButton saveBtn = new ToolStripButton("Save");
-            saveBtn.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            saveBtn.Image = this.imageList1.Images[0];
-            saveBtn.Click += saveBtn_Click;
-            excelRibbon.Header.AddQuickItem(saveBtn);
-
-            ToolStripButton undoBtn = new ToolStripButton("Undo");
-            undoBtn.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            undoBtn.Image = this.imageList1.Images[1];
-            excelRibbon.Header.AddQuickItem(undoBtn);
-            undoBtn.Click += undoBtn_Click;
-
-            ToolStripButton redoBtn = new ToolStripButton("Redo");
-            redoBtn.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            redoBtn.Image = this.imageList1.Images[2];
-            excelRibbon.Header.AddQuickItem(redoBtn);
-            redoBtn.Click += redoBtn_Click;
-        }
-
         void redoBtn_Click(object sender, EventArgs e)
         {
             //if (!this.workBook._grid.CommandStack.InTransaction)
@@ -324,21 +285,6 @@ namespace Financology.Watchlist
                     proc.Start();
                 }
             }
-        }
-
-        private void toolStripPanelItem15_Click(object sender, EventArgs e)
-        {
-            workBook.Paste();
-        }
-
-        void toolStripBtnCut_Click(object sender, System.EventArgs e)
-        {
-            workBook.Cut();
-        }
-
-        void toolStripBtnCopy_Click(object sender, System.EventArgs e)
-        {
-            workBook.Copy();
         }
 
 

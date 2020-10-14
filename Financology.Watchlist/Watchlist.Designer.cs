@@ -36,10 +36,6 @@ namespace Financology.Watchlist
             this.chooserButton = new SfButton();
             this.symbolBox = new TextBoxExt();
             this.addButton = new SfButton();
-            this.xpToolBar1 = new Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar();
-            this.barItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
-            this.barItem2 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
-            this.SapleBarIte = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
             this.superAccelerator1 = new Syncfusion.Windows.Forms.Tools.SuperAccelerator(this);
             this.scrollersFrame1 = new Syncfusion.Windows.Forms.ScrollersFrame(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -94,7 +90,7 @@ namespace Financology.Watchlist
             this.toolStripTabItem1.Panel.TabIndex = 2;
             this.toolStripTabItem1.Panel.Text = "ADD/EDIT";
             this.toolStripTabItem1.Position = 0;
-            this.toolStripTabItem1.Size = new System.Drawing.Size(54, 24);
+            this.toolStripTabItem1.Size = new System.Drawing.Size(54, 564);
             this.toolStripTabItem1.Text = "ADD/EDIT";
             // 
             // chooserButton
@@ -187,15 +183,13 @@ namespace Financology.Watchlist
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem1;
 
         internal WorkBook workBook = null;
-
-        private Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar xpToolBar1;
-        private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem SapleBarIte;
-        private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem1;
-        private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem2;
         private Syncfusion.Windows.Forms.Tools.SuperAccelerator superAccelerator1;
         private ColumnChooserPopup columnChooser;
         private Syncfusion.Windows.Forms.ScrollersFrame scrollersFrame1;
         private System.Windows.Forms.ImageList imageList1;
+        private SfButton chooserButton;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt symbolBox;
+        private SfButton addButton;
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -212,9 +206,6 @@ namespace Financology.Watchlist
             }
         }
 
-        private SfButton chooserButton;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt  symbolBox;
-        private SfButton addButton;
     }
 }
 

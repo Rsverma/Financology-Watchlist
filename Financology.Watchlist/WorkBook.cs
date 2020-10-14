@@ -16,6 +16,7 @@ using System.Windows.Forms;
 
 using Syncfusion.Windows.Forms;
 using Syncfusion.WinForms.DataGrid;
+using Syncfusion.WinForms.DataGrid.Events;
 
 namespace Financology.Watchlist
 {
@@ -104,6 +105,7 @@ namespace Financology.Watchlist
             _grid.Name = string.Format("SfDataGrid{0}", i + 1);
             _grid.Text = string.Format("SfDataGrid{0}", i + 1);
             _grid.AllowEditing = false;
+            DataManager.instance._currentUI = this;
             _grid.DataSource = DataManager.instance.liveFeeds;
             _grid.VisibleChanged += new EventHandler(_grid_VisibleChanged);
             _grid.QueryCellStyle += _grid_QueryCellStyle;
@@ -111,17 +113,46 @@ namespace Financology.Watchlist
             _grid.AllowDraggingColumns = true;
             _grid.AllowFiltering = true;
             _grid.AllowSorting = true;
+            _grid.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode.Single;
             _grid.Style.HeaderStyle.BackColor = Color.FromArgb(100,62,86,125);
             _grid.Style.HeaderStyle.Font = new Syncfusion.WinForms.DataGrid.Styles.GridFontInfo(new Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            _grid.RecordContextMenu = new ContextMenuStrip();
+            _grid.RecordContextMenu.Items.Add("Delete", null, OnDeleteClicked);
             i++;
             this.ResumeLayout(true);
             #endregion
         }
 
+        private void OnDeleteClicked(object sender, EventArgs e)
+        {
+            if (_grid.SelectedIndex >= 0)
+            {
+                DataManager.instance.DeleteRow(_grid.SelectedIndex);
+            }
+        }
+
         private void _grid_QueryCellStyle(object sender, Syncfusion.WinForms.DataGrid.Events.QueryCellStyleEventArgs e)
         {
-            if (e.Column.HeaderText.Equals("Ask") && DataManager.instance.colors.ContainsKey(e.RowIndex) && DataManager.instance.colors[e.RowIndex].isAskgreater.HasValue)
-                e.Style.TextColor = DataManager.instance.colors[e.RowIndex].isAskgreater.Value ? Color.Green : Color.Red;
+            switch (e.Column.MappingName)
+            {
+                case "Ask":
+                    if (DataManager.instance.colors.ContainsKey(e.RowIndex) && DataManager.instance.colors[e.RowIndex].isAskGreater.HasValue)
+                        e.Style.TextColor = DataManager.instance.colors[e.RowIndex].isAskGreater.Value ? Color.Green : Color.Red;
+                    break;
+                case "Last":
+                    if (DataManager.instance.colors.ContainsKey(e.RowIndex) && DataManager.instance.colors[e.RowIndex].isLastGreater.HasValue)
+                        e.Style.TextColor = DataManager.instance.colors[e.RowIndex].isLastGreater.Value ? Color.Green : Color.Red;
+                    break;
+                case "Bid":
+                    if (DataManager.instance.colors.ContainsKey(e.RowIndex) && DataManager.instance.colors[e.RowIndex].isBidGreater.HasValue)
+                        e.Style.TextColor = DataManager.instance.colors[e.RowIndex].isBidGreater.Value ? Color.Green : Color.Red;
+                    break;
+                case "Change":
+                case "ChangePercent":
+                    if (DataManager.instance.colors.ContainsKey(e.RowIndex) && DataManager.instance.colors[e.RowIndex].isChangePositive.HasValue)
+                        e.Style.TextColor = DataManager.instance.colors[e.RowIndex].isChangePositive.Value ? Color.Green : Color.Red;
+                    break;
+            }
         }
 
         #endregion
@@ -148,23 +179,6 @@ namespace Financology.Watchlist
         #endregion
 
         #region Methods
-        internal void Paste()
-        {
-            this._grid.Focus();
-            //this._grid.Model.CutPaste.Paste();
-        }
-
-        internal void Cut()
-        {
-            this._grid.Focus();
-            //this._grid.Model.CutPaste.Cut();
-        }
-
-        internal void Copy()
-        {
-            this._grid.Focus();
-            //this._grid.Model.CutPaste.Copy();
-        }
         #endregion
 
         #region Events

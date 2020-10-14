@@ -58,10 +58,6 @@ namespace Financology.YahooAPIManager
             data.regularMarketVolume = result.regularMarketVolume;
             data.Close = result.regularMarketPreviousClose;
             data.Bid = result.bid;
-            if (result.ask > data.Ask)
-                data.isAskgreater = true;
-            else if (result.ask < data.Ask)
-                data.isAskgreater = false;
             data.Ask = result.ask;
             data.bidSize = result.bidSize;
             data.askSize = result.askSize;

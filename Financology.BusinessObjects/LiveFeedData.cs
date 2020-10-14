@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Financology.BusinessObjects
 {
@@ -6,13 +7,24 @@ namespace Financology.BusinessObjects
     {
         public string Symbol { get; set; }
         public double Ask { get; set; }
-        public bool? isAskgreater { get; set; }
+
+        [Bindable(false)]
+        public bool? isAskGreater { get; set; }
         public double Bid { get; set; }
+
+        [Bindable(false)]
+        public bool? isBidGreater { get; set; }
         public double Last { get; set; }
+
+        [Bindable(false)] 
+        public bool? isLastGreater { get; set; }
         public double High { get; set; }
         public double Low { get; set; }
         public double Open { get; set; }
         public double Change { get; set; }
+
+        [Bindable(false)]
+        public bool? isChangePositive { get; set; }
         public double ChangePercent { get; set; }
         public double Close { get; set; }
         public string Asset { get; set; }
