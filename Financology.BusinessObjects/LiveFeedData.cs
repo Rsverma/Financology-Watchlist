@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 
 namespace Financology.BusinessObjects
@@ -16,7 +17,7 @@ namespace Financology.BusinessObjects
         public bool? isBidGreater { get; set; }
         public double Last { get; set; }
 
-        [Bindable(false)] 
+        [Bindable(false)]
         public bool? isLastGreater { get; set; }
         public double High { get; set; }
         public double Low { get; set; }
@@ -100,7 +101,7 @@ namespace Financology.BusinessObjects
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(Symbol);
+            return -1758840423 + EqualityComparer<string>.Default.GetHashCode(Symbol);
         }
     }
 }

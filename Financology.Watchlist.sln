@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30523.141
+VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Financology.Watchlist", "Financology.Watchlist\Financology.Watchlist.csproj", "{4C9A0082-EA99-4CC2-94F1-2EBF826B7183}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financology.Watchlist", "Financology.Watchlist\Financology.Watchlist.csproj", "{80F17693-B5E9-4D8E-B342-AD660FDCEBE7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Financology.APIFactory", "Financology.APIFactory\Financology.APIFactory.csproj", "{9E25C76D-9987-407C-A707-3E42D1E81E24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financology.APIFactory", "Financology.APIFactory\Financology.APIFactory.csproj", "{69F21E5E-F784-401D-A514-546F2518F4CE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Financology.BusinessObjects", "Financology.BusinessObjects\Financology.BusinessObjects.csproj", "{899D6273-67F3-4E7C-8C82-C370A6561559}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financology.BusinessLogic", "Financology.BusinessLogic\Financology.BusinessLogic.csproj", "{3FBFBB4C-DA82-4463-89F7-AE4D6C56A2EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Financology.BusinessLogic", "Financology.BusinessLogic\Financology.BusinessLogic.csproj", "{2C43B58A-3CD5-41E0-ABAE-85070A95605C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financology.BusinessObjects", "Financology.BusinessObjects\Financology.BusinessObjects.csproj", "{C75D2287-7813-4C1E-A995-9368F7B54E72}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Financology.YahooAPIManager", "Financology.YahooAPIManager\Financology.YahooAPIManager.csproj", "{A526BF5B-E46F-431C-9F6C-4709D8AC66BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financology.Logger", "Financology.Logger\Financology.Logger.csproj", "{E27F9C01-43EF-47F1-908C-8B269C712059}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financology.Logger", "Financology.Logger\Financology.Logger.csproj", "{241E2BBC-D9C2-4539-A5AE-38472AA3FE11}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financology.YahooAPIManager", "Financology.YahooAPIManager\Financology.YahooAPIManager.csproj", "{E5BBB8A2-F9E6-4D02-968C-58BFACE9D39D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,35 +21,35 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4C9A0082-EA99-4CC2-94F1-2EBF826B7183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C9A0082-EA99-4CC2-94F1-2EBF826B7183}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C9A0082-EA99-4CC2-94F1-2EBF826B7183}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C9A0082-EA99-4CC2-94F1-2EBF826B7183}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9E25C76D-9987-407C-A707-3E42D1E81E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E25C76D-9987-407C-A707-3E42D1E81E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E25C76D-9987-407C-A707-3E42D1E81E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E25C76D-9987-407C-A707-3E42D1E81E24}.Release|Any CPU.Build.0 = Release|Any CPU
-		{899D6273-67F3-4E7C-8C82-C370A6561559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{899D6273-67F3-4E7C-8C82-C370A6561559}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{899D6273-67F3-4E7C-8C82-C370A6561559}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{899D6273-67F3-4E7C-8C82-C370A6561559}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C43B58A-3CD5-41E0-ABAE-85070A95605C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C43B58A-3CD5-41E0-ABAE-85070A95605C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C43B58A-3CD5-41E0-ABAE-85070A95605C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C43B58A-3CD5-41E0-ABAE-85070A95605C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A526BF5B-E46F-431C-9F6C-4709D8AC66BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A526BF5B-E46F-431C-9F6C-4709D8AC66BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A526BF5B-E46F-431C-9F6C-4709D8AC66BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A526BF5B-E46F-431C-9F6C-4709D8AC66BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{241E2BBC-D9C2-4539-A5AE-38472AA3FE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{241E2BBC-D9C2-4539-A5AE-38472AA3FE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{241E2BBC-D9C2-4539-A5AE-38472AA3FE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{241E2BBC-D9C2-4539-A5AE-38472AA3FE11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80F17693-B5E9-4D8E-B342-AD660FDCEBE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F17693-B5E9-4D8E-B342-AD660FDCEBE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F17693-B5E9-4D8E-B342-AD660FDCEBE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F17693-B5E9-4D8E-B342-AD660FDCEBE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69F21E5E-F784-401D-A514-546F2518F4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F21E5E-F784-401D-A514-546F2518F4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F21E5E-F784-401D-A514-546F2518F4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69F21E5E-F784-401D-A514-546F2518F4CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FBFBB4C-DA82-4463-89F7-AE4D6C56A2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBFBB4C-DA82-4463-89F7-AE4D6C56A2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBFBB4C-DA82-4463-89F7-AE4D6C56A2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBFBB4C-DA82-4463-89F7-AE4D6C56A2EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75D2287-7813-4C1E-A995-9368F7B54E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75D2287-7813-4C1E-A995-9368F7B54E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75D2287-7813-4C1E-A995-9368F7B54E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75D2287-7813-4C1E-A995-9368F7B54E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E27F9C01-43EF-47F1-908C-8B269C712059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E27F9C01-43EF-47F1-908C-8B269C712059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E27F9C01-43EF-47F1-908C-8B269C712059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E27F9C01-43EF-47F1-908C-8B269C712059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5BBB8A2-F9E6-4D02-968C-58BFACE9D39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5BBB8A2-F9E6-4D02-968C-58BFACE9D39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5BBB8A2-F9E6-4D02-968C-58BFACE9D39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5BBB8A2-F9E6-4D02-968C-58BFACE9D39D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {294DD78B-7962-4E96-A7DC-63FA8C46691E}
+		SolutionGuid = {138197A1-2EDC-4A07-B9FC-DF911FE69C7D}
 	EndGlobalSection
 EndGlobal

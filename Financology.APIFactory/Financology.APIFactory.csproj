@@ -1,13 +1,68 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69F21E5E-F784-401D-A514-546F2518F4CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Financology.APIFactory</RootNamespace>
+    <AssemblyName>Financology.APIFactory</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
-
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Financology.BusinessLogic\Financology.BusinessLogic.csproj" />
-    <ProjectReference Include="..\Financology.BusinessObjects\Financology.BusinessObjects.csproj" />
-    <ProjectReference Include="..\Financology.YahooAPIManager\Financology.YahooAPIManager.csproj" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Compile Include="APIProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Financology.BusinessLogic\Financology.BusinessLogic.csproj">
+      <Project>{3fbfbb4c-da82-4463-89f7-ae4d6c56a2eb}</Project>
+      <Name>Financology.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Financology.BusinessObjects\Financology.BusinessObjects.csproj">
+      <Project>{c75d2287-7813-4c1e-a995-9368f7b54e72}</Project>
+      <Name>Financology.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Financology.Logger\Financology.Logger.csproj">
+      <Project>{e27f9c01-43ef-47f1-908c-8b269c712059}</Project>
+      <Name>Financology.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Financology.YahooAPIManager\Financology.YahooAPIManager.csproj">
+      <Project>{e5bbb8a2-f9e6-4d02-968c-58bface9d39d}</Project>
+      <Name>Financology.YahooAPIManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

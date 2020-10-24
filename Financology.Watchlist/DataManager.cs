@@ -24,18 +24,18 @@ namespace Financology.Watchlist
         private Timer timer;
         private List<string> symbols = new List<string>();
         private readonly object _locker = new object();
-        public WorkBook _currentUI = null;
+        public GridTab _currentUI = null;
 
         private DataManager()
         {
-            if(File.Exists(@"symbols.json"))
+            if (File.Exists(@"symbols.json"))
                 using (StreamReader file = File.OpenText(@"symbols.json"))
                 {
                     JsonSerializer serializer = new JsonSerializer();
                     symbols = (List<string>)serializer.Deserialize(file, typeof(List<string>));
                 }
-            
-            timer = new Timer(new TimerCallback(TickTimer), null, 0, _liveFeedInterval * 1000);
+
+            timer = new Timer(new TimerCallback(TickTimer), null, System.Threading.Timeout.Infinite, _liveFeedInterval * 1000);
         }
 
         private void TickTimer(object state)
