@@ -41,6 +41,7 @@ namespace Financology.Watchlist
             this.mainTab = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
             this.statusBar = new Syncfusion.Windows.Forms.Tools.StatusBarAdv();
             this.dataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
+            this.addTabButton = new Syncfusion.WinForms.Controls.SfButton();
             this.mainLayoutPanel.SuspendLayout();
             this.topSectionPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.symbolTextBox)).BeginInit();
@@ -54,9 +55,9 @@ namespace Financology.Watchlist
             // 
             this.mainLayoutPanel.ColumnCount = 1;
             this.mainLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.mainLayoutPanel.Controls.Add(this.topSectionPanel, 0, 0);
-            this.mainLayoutPanel.Controls.Add(this.gridTabControl, 0, 1);
-            this.mainLayoutPanel.Controls.Add(this.statusBar, 0, 2);
+            this.mainLayoutPanel.Controls.Add(this.topSectionPanel);
+            this.mainLayoutPanel.Controls.Add(this.gridTabControl);
+            this.mainLayoutPanel.Controls.Add(this.statusBar);
             this.mainLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainLayoutPanel.Location = new System.Drawing.Point(2, 2);
             this.mainLayoutPanel.Name = "mainLayoutPanel";
@@ -77,6 +78,7 @@ namespace Financology.Watchlist
             this.topSectionPanel.Controls.Add(this.symbolTextBox, 0, 1);
             this.topSectionPanel.Controls.Add(this.columnChooserButton, 3, 0);
             this.topSectionPanel.Controls.Add(this.addSymbolbutton, 1, 1);
+            this.topSectionPanel.Controls.Add(this.addTabButton, 0, 0);
             this.topSectionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.topSectionPanel.Location = new System.Drawing.Point(3, 3);
             this.topSectionPanel.Name = "topSectionPanel";
@@ -120,6 +122,8 @@ namespace Financology.Watchlist
             // 
             // gridTabControl
             // 
+            this.gridTabControl.ActiveTabForeColor = Color.White;
+            this.gridTabControl.InActiveTabForeColor = Color.GhostWhite;
             this.gridTabControl.BeforeTouchSize = new System.Drawing.Size(790, 368);
             this.gridTabControl.Controls.Add(this.mainTab);
             this.gridTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -163,6 +167,16 @@ namespace Financology.Watchlist
             this.dataGrid.TabIndex = 1;
             this.dataGrid.Text = "dataGrid";
             // 
+            // addTabButton
+            // 
+            this.addTabButton.AccessibleName = "Button";
+            this.addTabButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.addTabButton.Location = new System.Drawing.Point(3, 3);
+            this.addTabButton.Name = "addTabButton";
+            this.addTabButton.Size = new System.Drawing.Size(79, 17);
+            this.addTabButton.TabIndex = 4;
+            this.addTabButton.Text = "Add Tab";
+            // 
             // WatchlistForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,7 +186,8 @@ namespace Financology.Watchlist
             this.Controls.Add(this.mainLayoutPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WatchlistForm";
-            this.Style.BackColor = System.Drawing.Color.Gray;
+            this.Style.BackColor = System.Drawing.Color.Black;
+            this.Style.ForeColor = System.Drawing.Color.White;
             this.Style.MdiChild.IconHorizontalAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.Style.MdiChild.IconVerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Center;
             this.Style.TitleBar.BackColor = System.Drawing.Color.Black;
@@ -186,6 +201,7 @@ namespace Financology.Watchlist
             this.Style.TitleBar.MinimizeButtonForeColor = System.Drawing.Color.White;
             this.Style.TitleBar.MinimizeButtonHoverBackColor = System.Drawing.Color.DarkGray;
             this.Style.TitleBar.MinimizeButtonPressedBackColor = System.Drawing.Color.Gray;
+            this.Style.TitleBar.TextHorizontalAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.Text = "Watchlist";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.mainLayoutPanel.ResumeLayout(false);
@@ -211,6 +227,7 @@ namespace Financology.Watchlist
         private Syncfusion.Windows.Forms.Tools.TextBoxExt symbolTextBox;
         private SfButton columnChooserButton;
         private SfButton addSymbolbutton;
+        private SfButton addTabButton;
     }
 }
 

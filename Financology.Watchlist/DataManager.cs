@@ -35,7 +35,7 @@ namespace Financology.Watchlist
                     symbols = (List<string>)serializer.Deserialize(file, typeof(List<string>));
                 }
 
-            timer = new Timer(new TimerCallback(TickTimer), null, System.Threading.Timeout.Infinite, _liveFeedInterval * 1000);
+            timer = new Timer(new TimerCallback(TickTimer), null, 0, _liveFeedInterval * 1000);
         }
 
         private void TickTimer(object state)

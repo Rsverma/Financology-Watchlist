@@ -20,6 +20,15 @@ namespace Financology.Watchlist
             mainTabData = new GridTab();
             dataGrid = mainTabData._grid;
             this.mainTab.Controls.Add(this.dataGrid);
+            this.symbolTextBox.KeyDown += SymbolTextBox_KeyDown;
+        }
+
+        private void SymbolTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                addSymbolbutton_Click(this, new EventArgs());
+            }
         }
 
         private void addSymbolbutton_Click(object sender, EventArgs e)
